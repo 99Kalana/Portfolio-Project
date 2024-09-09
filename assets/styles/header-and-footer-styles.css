@@ -25,18 +25,25 @@ header>#headerdiv{
 header>#headerdiv>a>img{
     border-radius: 100%;
     padding: 40px 20px;
+
+    transition-property:transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
 }
 
+header>#headerdiv>a>img:hover{
+    transform: scale(1.2);
+}
 
 
 header>#headerdiv>a:nth-child(2){
     position: absolute;
     width: 320px;
-    padding: 30.828px;
-    left: 80px;
+    padding: 28px;
+    left: 83px;
     text-decoration: none;
-
 }
+
 
 header>#headerdiv>a:nth-child(2)[href]{
     color: whitesmoke;
@@ -49,6 +56,14 @@ header>#headerdiv>a:nth-child(2)>h2{
     font-size: 35px;
 }
 
+header>#headerdiv>a:nth-child(2)>h2:hover{
+    color: #ffc733;
+}
+
+header>#headerdiv>a:nth-child(2)>h2:active{
+    color: #ff8a33;
+}
+
 header>#headerdiv>#headertopic{
     width: 380px;
     font-family: "Lato", sans-serif,system-ui;
@@ -57,7 +72,7 @@ header>#headerdiv>#headertopic{
     font-size: 23px;
     position: absolute;
     top: 0;
-    left: 358px;
+    left: 360px;
     padding: 66.781px;
     margin: 0;
 }
@@ -83,6 +98,14 @@ header>#headernav>a{
 }
 
 
+header>#headernav>a:hover{
+    color: #ffc733;
+}
+
+header>#headernav>a:active{
+    color: #ff8a33;
+}
+
 header>#headernav>span{
     color: whitesmoke;
 }
@@ -106,6 +129,13 @@ footer>#contactnav{
 
 footer>#contactnav>a>img{
     padding: 0 14px;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+footer>#contactnav>a>img:hover{
+    transform: scale(1.2);
 }
 
 footer>div{
@@ -151,4 +181,12 @@ footer>#pagenav>a{
     font-family: "Prompt", sans-serif,system-ui;
     font-weight: 300;
     font-style: normal;
+}
+
+footer>#pagenav>a:hover{
+    color: #ffc733;
+}
+
+footer>#pagenav>a:active{
+    color: #ff8a33;
 }
