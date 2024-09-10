@@ -29,6 +29,199 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 
+    <style>
+
+        main{
+            position: relative;
+            width: 100%;
+            height: 1000px;
+            margin-top: 160px;
+            background: linear-gradient(45deg, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
+        }
+
+        main>h1{
+            position: absolute;
+            color: whitesmoke;
+            font-family: "Lato", sans-serif,system-ui;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 50px;
+            width: fit-content;
+            height: fit-content;
+            margin: 0;
+            left: 200px;
+            padding: 90px 0;
+
+            animation-name: presentation-assignment-page-animation1;
+            animation-duration: 2s;
+            animation-iteration-count: initial;
+            animation-timing-function: ease;
+            animation-direction: normal;
+            animation-play-state: running;
+        }
+
+        @keyframes presentation-assignment-page-animation1 {
+            from{
+                left: 0;
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        main>#s1{
+            position: absolute;
+        }
+
+        main>#s1>img{
+            border: 2px ridge white;
+            margin-top: 200px;
+            margin-left: 200px;
+
+            animation-name: presentation-assignment-page-animation2;
+            animation-duration: 2s;
+            animation-iteration-count: initial;
+            animation-timing-function: ease;
+            animation-direction: normal;
+            animation-play-state: running;
+        }
+
+        @keyframes presentation-assignment-page-animation2 {
+            from{
+                margin-left: 0;
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        main>#s2{
+            position: absolute;
+        }
+
+        main>#s2>img{
+            border: 2px ridge white;
+            margin-top: 200px;
+            margin-left: 530px;
+
+            animation-name: presentation-assignment-page-animation3;
+            animation-duration: 2s;
+            animation-iteration-count: initial;
+            animation-timing-function: ease;
+            animation-direction: normal;
+            animation-play-state: running;
+        }
+
+        @keyframes presentation-assignment-page-animation3 {
+            from{
+                margin-left: 0;
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        main>#s3{
+            position: absolute;
+        }
+
+        main>#s3>img{
+            border: 2px ridge white;
+            margin-top: 400px;
+            margin-left: 200px;
+
+            animation-name: presentation-assignment-page-animation4;
+            animation-duration: 2s;
+            animation-iteration-count: initial;
+            animation-timing-function: ease;
+            animation-direction: normal;
+            animation-play-state: running;
+        }
+
+        @keyframes presentation-assignment-page-animation4 {
+            from{
+                margin-left: 0;
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        main>#s4{
+            position: absolute;
+        }
+
+        main>#s4>img{
+            border: 2px ridge white;
+            margin-top: 400px;
+            margin-left: 530px;
+
+            animation-name: presentation-assignment-page-animation5;
+            animation-duration: 2s;
+            animation-iteration-count: initial;
+            animation-timing-function: ease;
+            animation-direction: normal;
+            animation-play-state: running;
+        }
+
+        @keyframes presentation-assignment-page-animation5 {
+            from{
+                margin-left: 0;
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        main>#presentation-assignment-page-content{
+            position: absolute;
+            width: 690px;
+            height: 350px;
+            /*border: 3px solid red;*/
+            top: 230px;
+            left: 1000px;
+            color: whitesmoke;
+
+            animation-name: presentation-assignment-page-animation6;
+            animation-duration: 2s;
+            animation-iteration-count: initial;
+            animation-timing-function: ease;
+            animation-direction: normal;
+            animation-play-state: running;
+
+        }
+
+        @keyframes presentation-assignment-page-animation6 {
+            from{
+                top: 0;
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        main>#presentation-assignment-page-content>h3{
+            font-family: "Prompt", sans-serif,system-ui;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 35px;
+        }
+
+        main>#presentation-assignment-page-content>p{
+            font-family: "Prompt", sans-serif,system-ui;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 25px;
+        }
+
+    </style>
+
 </head>
 <body>
 
@@ -57,14 +250,20 @@
     <!--Heading-->
     <h1>Presentations / Assignments</h1>
     <!--Images-->
-    <section>
-        <img src="../assets/images/projects-images/presentation-assignments-images/2.png" title="presentaions-assignments img1"alt="presentaions-assignments img1" width="280"height="150"><br>
-        <img src="../assets/images/projects-images/presentation-assignments-images/5.png" title="presentaions-assignments img2"alt="presentaions-assignments img2" width="280"height="150"><br>
-        <img src="../assets/images/projects-images/presentation-assignments-images/3.png" title="presentaions-assignments img3"alt="presentaions-assignments img3" width="280"height="150"><br>
-        <img src="../assets/images/projects-images/presentation-assignments-images/4.png" title="presentaions-assignments img4"alt="presentaions-assignments img4" width="280"height="150"><br>
+    <section id="s1">
+        <img src="../assets/images/projects-images/presentation-assignments-images/2.png" title="presentaions-assignments img1"alt="presentaions-assignments img1" width="280"height="150">
+    </section>
+    <section id="s2">
+        <img src="../assets/images/projects-images/presentation-assignments-images/5.png" title="presentaions-assignments img2"alt="presentaions-assignments img2" width="280"height="150">
+    </section>
+    <section id="s3">
+        <img src="../assets/images/projects-images/presentation-assignments-images/3.png" title="presentaions-assignments img3"alt="presentaions-assignments img3" width="280"height="150">
+    </section>
+    <section id="s4">
+        <img src="../assets/images/projects-images/presentation-assignments-images/4.png" title="presentaions-assignments img4"alt="presentaions-assignments img4" width="280"height="150">
     </section>
     <!--Paragraph section-->
-    <section>
+    <section id="presentation-assignment-page-content">
         <!--Heading-->
         <h3>Presentation on Animal Hospital Management System</h3>
         <!--Paragraph Content-->
