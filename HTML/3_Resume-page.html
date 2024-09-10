@@ -29,6 +29,101 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 
+    <style>
+
+        main{
+            position: relative;
+            width: 100%;
+            height: 800px;
+            margin-top: 160px;
+            background: linear-gradient(45deg, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
+        }
+
+        main>img{
+            position: absolute;
+            width: 400px;
+            height: 528px;
+            border: 2px ridge whitesmoke;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 200px;
+
+            animation-name: resume-animation1;
+            animation-duration: 3s;
+            animation-iteration-count: initial;
+            animation-timing-function: ease-in;
+            animation-direction: normal;
+            animation-play-state: running;
+        }
+
+        @keyframes resume-animation1 {
+            from{
+                opacity: 0;
+                left: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        main>section{
+            position: absolute;
+            color: whitesmoke;
+            width: 880px;
+            height: 600px;
+            /*border: 3px solid red;*/
+            left: 660px;
+            top: 30px;
+
+            animation-name: resume-animation2;
+            animation-duration: 3s;
+            animation-iteration-count: initial;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            animation-play-state: running;
+        }
+
+        @keyframes resume-animation2 {
+            from{
+                opacity: 0;
+                top: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        main>section>h1{
+            font-family: "Lato", sans-serif,system-ui;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 74px;
+            width: fit-content;
+            height: fit-content;
+            left: 0;
+            right: 0;
+            top: 0;
+            margin: auto;
+        }
+
+        main>section>h4{
+            font-family: "Lato", sans-serif,system-ui;
+            font-weight: 410;
+            font-style: normal;
+            font-size:40px;
+        }
+
+        main>section>ul{
+            width: 880px;
+            font-family: "Prompt", sans-serif,system-ui;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 27px;
+        }
+
+    </style>
+
 </head>
 <body>
 
@@ -64,10 +159,10 @@
         <h4>Education</h4>
         <!--Content list-->
         <ul>
-            <li>2023-Present <strong> Studying Diploma in Software Engineering</strong><br>at IJSE(Institute of Software Enginnering) Panadura</li><br>
-            <li>2021 - 2022 <strong> Foundation Certification in Information Technology</strong><br>SLIIT-Curtin Colombo</li><br>
-            <li>2016 - 2019 <strong> G.C.E Advanced Level in Physics Stream</strong><br>as a private candidate</li><br>
-            <li>2010 - 2015  <strong> G.C.E. Ordinary Level Examination</strong><br>Royal College Boy’s School Panadura</li><br>
+            <li>2023-Present&nbsp;<strong> Studying Diploma in Software Engineering</strong><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;at IJSE(Institute of Software Enginnering) Panadura</li><br>
+            <li>2021 - 2022&nbsp;&nbsp;&nbsp;<strong> Foundation Certification in Information Technology</strong><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;at SLIIT-Curtin Colombo</li><br>
+            <li>2016 - 2019&nbsp;&nbsp;&nbsp;<strong> G.C.E Advanced Level in Physics Stream</strong><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;as a private candidate</li><br>
+            <li>2010 - 2015&nbsp;&nbsp;&nbsp;<strong> G.C.E. Ordinary Level Examination</strong><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;at Royal College Boy’s School Panadura</li><br>
         </ul>
     </section>
 </main>
