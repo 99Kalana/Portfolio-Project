@@ -29,6 +29,444 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 
+    <style>
+
+        header{
+            z-index: 20;
+        }
+
+        main{
+            position: relative;
+            width: 100%;
+            height: 2300px;
+            margin-top: 160px;
+            background: linear-gradient(45deg, rgba(243,226,199,1) 0%,rgba(193,158,103,1) 22%,rgba(182,141,76,1) 77%,rgba(182,141,76,1) 77%,rgba(233,212,179,1) 100%);
+        }
+
+        main>section:first-child{
+            position: relative;
+            color: whitesmoke;
+
+            animation-name: personal-page-animation1;
+            animation-duration: 2s;
+            animation-iteration-count: initial;
+            animation-timing-function: ease-in;
+            animation-direction: normal;
+            animation-play-state: running;
+
+
+        }
+
+        @keyframes personal-page-animation1 {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        main>section:first-child>h1{
+            font-family: "Lato", sans-serif,system-ui;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 100px;
+            width: fit-content;
+            height: fit-content;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 0;
+            padding: 50px ;
+        }
+
+        main>section:first-child>h4{
+            font-family: "Radio Canada", sans-serif,system-ui;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 30px;
+            width: fit-content;
+            height: fit-content;
+            left: 0;
+            right: 0;
+            margin: auto;
+            /*padding: 50px 0;*/
+            top: 160px;
+            padding-bottom: 10px;
+        }
+
+        main>section:first-child>hr{
+            width: 38%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        /*-----------------------------------------------------------------------------*/
+
+        main>section:nth-child(2){
+            z-index: 5;
+            position: absolute;
+            color: whitesmoke;
+        }
+
+        main>section:nth-child(2)>section:first-child>div:first-child{
+            width: 770px;
+            height: 500px;
+            /*border: 3px solid greenyellow;*/
+            margin-top: 300px;
+            margin-left: 130px;
+
+            animation-name: personal-page-animation2;
+            animation-duration: 2s;
+            animation-iteration-count: initial;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            animation-play-state: running;
+
+        }
+
+        @keyframes personal-page-animation2 {
+            from{
+                margin-left: 0;
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        main>section:nth-child(2)>section:first-child>div:first-child>h3{
+            font-family: "Radio Canada", sans-serif,system-ui;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 50px;
+            width: fit-content;
+            height: fit-content;
+            left: 0;
+            top: 0;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+
+        main>section:nth-child(2)>section:first-child>div>#c1nav>#c1a1{
+            position: absolute;
+            z-index: 10;
+            border: 2px solid whitesmoke;
+            color: whitesmoke;
+            text-decoration: none;
+            font-family: "Prompt", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 25px;
+            width: fit-content;
+            height: fit-content;
+        }
+
+
+        main>section:nth-child(2)>section:first-child>div:first-child>p{
+            font-family: "Prompt", sans-serif,system-ui;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 33px;
+        }
+
+        /*------------------------------------------------------*/
+
+        main>section:nth-child(3){
+            position: absolute;
+
+        }
+
+        main>section:nth-child(3)>div{
+            width: 230px;
+            height: 300px;
+            border: 2px ridge seashell;
+            margin-left: 1000px;
+            margin-top: 390px;
+
+            animation-name: personal-page-animation3;
+            animation-duration: 2s;
+            animation-iteration-count: initial;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            animation-play-state: running;
+        }
+
+        @keyframes personal-page-animation3 {
+            from{
+                margin-left: 0;
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        main>section:nth-child(4){
+            position: absolute;
+
+        }
+
+        main>section:nth-child(4)>div{
+            width: 230px;
+            height: 300px;
+            border: 2px ridge seashell;
+            margin-left: 1300px;
+            margin-top: 200px;
+
+            animation-name: personal-page-animation4;
+            animation-duration: 2s;
+            animation-iteration-count: initial;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            animation-play-state: running;
+        }
+
+        @keyframes personal-page-animation4 {
+            from{
+                margin-top: 0;
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        main>section:nth-child(5){
+            position: absolute;
+
+        }
+
+        main>section:nth-child(5)>div{
+            width: 390px;
+            height: 220px;
+            border: 2px ridge seashell;
+            margin-left: 1280px;
+            margin-top: 560px;
+
+            animation-name: personal-page-animation5;
+            animation-duration: 2s;
+            animation-iteration-count: initial;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            animation-play-state: running;
+        }
+
+        @keyframes personal-page-animation5 {
+            from{
+                margin-top: 0;
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        /*-------------------------------------------------------------------*/
+
+        main>section:nth-child(6){
+            z-index: 6;
+            position: absolute;
+            color: whitesmoke;
+        }
+
+        main>section:nth-child(6)>section:first-child>div:first-child{
+            width: 770px;
+            height: 500px;
+            /*border: 3px solid greenyellow;*/
+            margin-top: 1180px;
+            margin-left: 130px;
+
+            animation-name: personal-page-animation6;
+            animation-duration: 2s;
+            animation-iteration-count: initial;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            animation-play-state: running;
+
+
+
+        }
+
+        @keyframes personal-page-animation6 {
+            from{
+                margin-left: 0;
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        main>section:nth-child(6)>section:first-child>div:first-child>h3{
+            font-family: "Radio Canada", sans-serif,system-ui;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 50px;
+            width: fit-content;
+            height: fit-content;
+            left: 0;
+            top: 0;
+            margin: 0;
+            padding: 20px 0;
+
+        }
+
+
+
+        main>section:nth-child(6)>section:first-child>div>#c2nav>#c2a2{
+            position: absolute;
+            z-index: 11;
+            border: 2px solid whitesmoke;
+            color: whitesmoke;
+            text-decoration: none;
+            font-family: "Prompt", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 25px;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        main>section:nth-child(6)>section:first-child>div:first-child>p{
+            font-family: "Prompt", sans-serif,system-ui;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 33px;
+
+
+        }
+
+        /*--------------------------------------------------------------------------*/
+
+        main>section:nth-child(7){
+            position: absolute;
+
+        }
+
+        main>section:nth-child(7)>div{
+            width: 380px;
+            height: 230px;
+            border: 2px ridge seashell;
+            margin-left: 960px;
+            margin-top: 1100px;
+
+            animation-name: personal-page-animation7;
+            animation-duration: 2s;
+            animation-iteration-count: initial;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            animation-play-state: running;
+        }
+
+        @keyframes personal-page-animation7 {
+            from{
+                margin-top: 0;
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        main>section:nth-child(8){
+            position: absolute;
+
+        }
+
+        main>section:nth-child(8)>div{
+            width: 380px;
+            height: 230px;
+            border: 2px ridge seashell;
+            margin-left: 1380px;
+            margin-top: 1100px;
+
+            animation-name: personal-page-animation8;
+            animation-duration: 2s;
+            animation-iteration-count: initial;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            animation-play-state: running;
+        }
+
+        @keyframes personal-page-animation8 {
+            from{
+                margin-top: 0;
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        main>section:nth-child(9){
+            position: absolute;
+
+        }
+
+        main>section:nth-child(9)>div{
+            width: 280px;
+            height: 360px;
+            border: 2px ridge seashell;
+            margin-left: 1060px;
+            margin-top: 1380px;
+
+            animation-name: personal-page-animation9;
+            animation-duration: 2s;
+            animation-iteration-count: initial;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            animation-play-state: running;
+        }
+
+        @keyframes personal-page-animation9 {
+            from{
+                margin-left: 0;
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        main>section:nth-child(10){
+            position: absolute;
+
+        }
+
+        main>section:nth-child(10)>div{
+            width: 280px;
+            height: 360px;
+            border: 2px ridge seashell;
+            margin-left: 1380px;
+            margin-top: 1380px;
+
+            animation-name: personal-page-animation10;
+            animation-duration: 2s;
+            animation-iteration-count: initial;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            animation-play-state: running;
+        }
+
+        @keyframes personal-page-animation10 {
+            from{
+                margin-left: 0;
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+    </style>
+
+
 </head>
 <body>
 
@@ -72,48 +510,101 @@
             <div>
                 <!--Sub-Heading Section-->
                 <h3>Nature Photography</h3>
-                <!--View Collection Nav-->
-                <nav>
-                    <a href="8_Gallery-page1.html">(View Collection)</a>
+                <!-- Content 1 View Collection Nav-->
+                <nav id="c1nav">
+                    <a href="8_Gallery-page1.html" id="c1a1">View Collection</a>
                 </nav>
                 <!--Content 1 Paragraph Section-->
                 <p>
                     Nature photography allows me to capture the beauty and serenity of the natural world. It’s a way for me to unwind and find relaxation, as I immerse myself in photographing animals, intricate biodiversities, and stunning natural scenarios. Each shot is a moment of joy and a reflection of my connection with nature, providing a peaceful escape from the demands of daily life.
                 </p>
             </div>
-            <!--Content 1 Images-->
-            <div>
-                <img src="../assets/images/personal-images/nature-photography-images/1.JPG"title="nature img1"alt="nature img1"width="150"height="200"><br>
-                <img src="../assets/images/personal-images/nature-photography-images/2.JPG"title="nature img2"alt="nature img2"width="150"height="200"><br>
-                <img src="../assets/images/personal-images/nature-photography-images/3.JPG"title="nature img3"alt="nature img3"width="250"height="150"><br>
-            </div>
         </section>
 
+
+    </section>
+
+
+    <section>
+        <!--Content 1 Images-->
+        <div>
+            <img src="../assets/images/personal-images/nature-photography-images/1.JPG" title="nature img1" alt="nature img1" width="230" height="300">
+        </div>
+    </section>
+
+    <section>
+        <!--Content 1 Images-->
+        <div>
+            <img src="../assets/images/personal-images/nature-photography-images/2.JPG" title="nature img2" alt="nature img2" width="230" height="300">
+        </div>
+    </section>
+
+    <section>
+        <!--Content 1 Images-->
+        <div>
+            <img src="../assets/images/personal-images/nature-photography-images/3.JPG" title="nature img3" alt="nature img3" width="390" height="220">
+        </div>
+    </section>
+
+
+
+    <section>
         <!--Content 2 section-->
         <section>
             <!--Content 2-->
             <div>
                 <!--Sub-Heading Section-->
                 <h3>Renovate old Bicycles </h3>
-                <!--View Collection Nav-->
-                <nav>
-                    <a href="9_Gallery-page2.html">(View Collection)</a>
+                <!-- Content 2 View Collection Nav-->
+                <nav id="c2nav">
+                    <a href="9_Gallery-page2.html" id="c2a2">View Collection</a>
                 </nav>
                 <!--Content 2 Paragraph Section-->
                 <p>
                     I’m currently engaged in renovating an old, rusty bicycle, transforming it into a fully functional ride once again. This project is not only about restoring a piece of machinery but also about breathing new life into something that has weathered the years. Through careful attention to detail and a passion for craftsmanship, I’m reviving this bicycle to hit the roads with renewed purpose and style.
                 </p>
             </div>
-            <!--Content 2 Images-->
-            <div>
-                <img src="../assets/images/personal-images/renovate-old-bicycle-images/1.JPG"title="renovate bicycle img1"alt="renovate bicycle img1"width="230"height="150"><br>
-                <img src="../assets/images/personal-images/renovate-old-bicycle-images/2.JPG"title="renovate bicycle img2"alt="renovate bicycle img2"width="230"height="150"><br>
-                <img src="../assets/images/personal-images/renovate-old-bicycle-images/3.JPG"title="renovate bicycle img3"alt="renovate bicycle img3"width="190"height="250"><br>
-                <img src="../assets/images/personal-images/renovate-old-bicycle-images/4.JPG"title="renovate bicycle img4"alt="renovate bicycle img4"width="190"height="250"><br>
-            </div>
         </section>
 
     </section>
+
+    <section>
+        <!--Content 2 Images-->
+        <div>
+            <img src="../assets/images/personal-images/renovate-old-bicycle-images/1.JPG" title="renovate bicycle img1" alt="renovate bicycle img1" width="380" height="230">
+        </div>
+    </section>
+    <section>
+        <!--Content 2 Images-->
+        <div>
+            <img src="../assets/images/personal-images/renovate-old-bicycle-images/2.JPG" title="renovate bicycle img2" alt="renovate bicycle img2" width="380" height="230">
+        </div>
+    </section>
+    <section>
+        <!--Content 2 Images-->
+        <div>
+            <img src="../assets/images/personal-images/renovate-old-bicycle-images/3.JPG" title="renovate bicycle img3" alt="renovate bicycle img3" width="280" height="360">
+        </div>
+    </section>
+    <section>
+        <!--Content 2 Images-->
+        <div>
+            <img src="../assets/images/personal-images/renovate-old-bicycle-images/4.JPG" title="renovate bicycle img4" alt="renovate bicycle img4" width="280" height="360">
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </main>
 
 
