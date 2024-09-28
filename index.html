@@ -147,6 +147,11 @@
             display: none;
         }
 
+        /*mobile menubar*/
+        header>section>img{
+             visibility: hidden;
+         }
+
         /*footer styling*/
         footer{
             position: relative;
@@ -224,13 +229,10 @@
             color: #ff8a33;
         }
 
-
-
-
-
-
-
-
+        /*footer separate bar*/
+        footer>#pagenav>span{
+            visibility: hidden;
+        }
 
 
         /*Hero Section*/
@@ -241,6 +243,10 @@
             height: 800px;
             background: linear-gradient(45deg, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
             margin-top: 160px;
+        }
+
+        main>section:first-child>h1{
+            visibility: hidden;
         }
 
         main>section:first-child>img{
@@ -255,16 +261,16 @@
             left: 230px;
             visibility: inherit;
 
-            animation-name: homepage-animation1;
+            /*animation-name: homepage-animation1;
             animation-duration: 2s;
             animation-iteration-count: initial;
             animation-timing-function: ease-in;
             animation-direction: normal;
-            /*animation-delay: 1s;*/
-            animation-play-state: running;
+            !*animation-delay: 1s;*!
+            animation-play-state: running;*/
         }
 
-        @keyframes homepage-animation1 {
+        /*@keyframes homepage-animation1 {
             from{
                 left: 0;
                 opacity: 0;
@@ -274,7 +280,7 @@
                 opacity: 1;
                 visibility: visible;
             }
-        }
+        }*/
 
         main>section:last-child{
             position: absolute;
@@ -288,16 +294,16 @@
             /*border: 3px solid red;*/
             visibility: inherit;
 
-            animation-name: homepage-animation2;
+            /*animation-name: homepage-animation2;
             animation-duration: 2s;
             animation-iteration-count: initial;
             animation-timing-function: ease-in;
             animation-direction: normal;
-            /*animation-delay: 1s;*/
-            animation-play-state: running;
+            !*animation-delay: 1s;*!
+            animation-play-state: running;*/
         }
 
-        @keyframes homepage-animation2 {
+        /*@keyframes homepage-animation2 {
             from{
                 opacity: 0;
                 visibility: hidden;
@@ -306,7 +312,7 @@
                 opacity: 1;
                 visibility: visible;
             }
-        }
+        }*/
 
         main>section:last-child>h1{
             font-family: "Lato", sans-serif,system-ui;
@@ -337,6 +343,900 @@
         }
 
 
+        /*responsive by media query size- laptop - width 1024px*/
+        @media all and (max-width: 1024px){
+
+            /*header styling*/
+            header{
+                height: 150px;
+            }
+
+
+            header>#headerdiv>a>img{
+                border-radius: 100%;
+                padding: 55px 10px;
+                width: 40px;
+                height: 40px;
+            }
+
+
+            header>#headerdiv>a:nth-child(2){
+                width: 220px;
+                height: fit-content;
+                padding: 0;
+                margin-top: 27px;
+                left: 63px;
+            }
+
+
+            header>#headerdiv>a:nth-child(2)>h2{
+                font-size: 25px;
+            }
+
+
+            header>#headerdiv>#headertopic{
+                width: 300px;
+                font-size: 20px;
+                padding: 0;
+                margin-top: 80px;
+                left: 63px;
+            }
+
+
+            header>#headernav{
+                right: 5px;
+                font-size: 18px;
+            }
+
+            header>#headernav>a{
+                padding: 0 7px;
+            }
+
+
+
+            /*footer styling*/
+            footer{
+                height: 150px;
+            }
+
+            footer>#contactnav{
+                padding: 0;
+                height: fit-content;
+                width: fit-content;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                left: 3px;
+            }
+
+            footer>#contactnav>a>img{
+                padding: 0 5px;
+                width: 40px;
+                height: 40px;
+            }
+
+
+            footer>div>h6{
+                height: fit-content;
+                width: 250px;
+                font-size: 18px;
+                left: 430px;
+            }
+
+            footer>div>img{
+                width: 25px;
+                height: 25px;
+                left: 400px;
+            }
+
+            footer>#pagenav{
+                right: 3px;
+                font-size: 16px;
+            }
+
+            footer>#pagenav>a{
+                padding: 0 6px;
+            }
+
+
+            /*Hero Section*/
+            main{
+                height: 700px;
+                margin-top: 150px;
+            }
+
+            main>section:first-child>img{
+                width: 330px;
+                height: 330px;
+                left: 50px;
+
+
+                /*animation-name: homepage-animation1;
+                animation-duration: 2s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 1s;*!
+                animation-play-state: running;*/
+            }
+
+            /*@keyframes homepage-animation1 {
+                from{
+                    left: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+            main>section:last-child{
+                width: 580px;
+                height: 300px;
+                left: 410px;
+                /*border: 3px solid red;*/
+            }
+
+
+            main>section:last-child>h1{
+                font-size: 63px;
+            }
+
+            main>section:last-child>h3{
+                font-size: 43px;
+                padding: 8px 0;
+            }
+
+            main>section:last-child>p{
+                font-size: 23px;
+                padding: 8px 0;
+            }
+
+        }
+
+        /*responsive by media query size- tab - width 768x*/
+        @media all and (max-width: 768px){
+
+            /*header styling*/
+
+            header>#headerdiv>a>img{
+                border-radius: 100%;
+                padding: 55px 10px;
+                width: 40px;
+                height: 40px;
+            }
+
+
+            header>#headerdiv>a:nth-child(2){
+                width: 220px;
+                height: fit-content;
+                padding: 0;
+                margin-top: 27px;
+                left: 60px;
+            }
+
+
+            header>#headerdiv>a:nth-child(2)>h2{
+                font-size: 23px;
+            }
+
+
+            header>#headerdiv>#headertopic{
+                width: 300px;
+                font-size: 17px;
+                padding: 0;
+                margin-top: 80px;
+                left: 60px;
+            }
+
+
+            header>#headernav{
+                right: 5px;
+                font-size: 15px;
+            }
+
+            header>#headernav>a{
+                padding: 0 5px;
+            }
+
+            /*footer styling*/
+            footer{
+                height: 150px;
+            }
+
+            footer>#contactnav{
+                padding: 0;
+                height: fit-content;
+                width: fit-content;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                left: 10px;
+            }
+
+            footer>#contactnav>a>img{
+                padding: 0 5px;
+                width: 30px;
+                height: 30px;
+            }
+
+
+            footer>div>h6{
+                height: fit-content;
+                width: 250px;
+                font-size: 16px;
+                left: 310px;
+                top: 120px;
+            }
+
+            footer>div>img{
+                width: 20px;
+                height: 20px;
+                top: 118px;
+                left: 283px;
+            }
+
+            footer>#pagenav{
+                right: 3px;
+                font-size: 14px;
+            }
+
+            footer>#pagenav>a{
+                padding: 0 6px;
+            }
+
+
+            /*Hero Section*/
+            main{
+                height: 600px;
+                margin-top: 150px;
+            }
+
+            main>section:first-child>img{
+                width: 260px;
+                height: 260px;
+                left: 30px;
+
+
+                /*animation-name: homepage-animation1;
+                animation-duration: 2s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 1s;*!
+                animation-play-state: running;*/
+            }
+
+            /*@keyframes homepage-animation1 {
+                from{
+                    left: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+            main>section:last-child{
+                width: 430px;
+                height: 220px;
+                left: 330px;
+                /*border: 3px solid red;*/
+            }
+
+
+            main>section:last-child>h1{
+                font-size: 43px;
+            }
+
+            main>section:last-child>h3{
+                font-size: 33px;
+                padding: 8px 0;
+            }
+
+            main>section:last-child>p{
+                font-size: 16px;
+                padding: 8px 0;
+            }
+
+        }
+
+        /*responsive by media query size- mobile large - width 425x*/
+        @media all and (max-width: 425px){
+
+            /*header styling*/
+
+            header{
+
+                height: 130px;
+
+            }
+
+            header>#headerdiv>a>img{
+                border-radius: 100%;
+                padding: 23px 20px;
+                width: 43px;
+                height: 43px;
+            }
+
+
+            header>#headerdiv>a:nth-child(2){
+                width: 215px;
+                height: fit-content;
+                padding: 0;
+                margin-top: 10px;
+                left: 70px;
+            }
+
+
+            header>#headerdiv>a:nth-child(2)>h2{
+                font-size: 25px;
+            }
+
+
+            header>#headerdiv>#headertopic{
+                width: 210px;
+                font-size: 18px;
+                padding: 0;
+                margin-top: 70px;
+                left: 70px;
+            }
+
+
+            header>#headernav{
+                visibility: hidden;
+            }
+
+            header>#headernav>a{
+                padding: 0 5px;
+            }
+
+            /*mobile menubar*/
+            header>section>img{
+                visibility: visible;
+                position: absolute;
+                width: 36px;
+                height: 36px;
+                right: 18px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+
+            /*footer styling*/
+            footer{
+                height: 130px;
+            }
+
+            footer>#contactnav{
+                height: 40px;
+                width: 130px;
+                top: 100px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                position: relative;
+            }
+
+            footer>#contactnav>a>img{
+                padding: 0 5px;
+                width: 20px;
+                height: 20px;
+            }
+
+
+            footer>div>h6{
+                height: fit-content;
+                width: 250px;
+                font-size: 14px;
+                left: 130px;
+                top: 3px;
+                position: relative;
+            }
+
+            footer>div>img{
+                width: 18px;
+                height: 18px;
+                top: 23px;
+                left: 110px;
+                position: relative;
+            }
+
+            footer>#pagenav{
+                width: fit-content;
+                height: fit-content;
+                font-size: 14px;
+                position: relative;
+                top: -10px;
+                left: 0;
+                bottom: 0;
+                margin: auto;
+            }
+
+            footer>#pagenav>a{
+                padding: 0 6px;
+            }
+
+            footer>#pagenav>span{
+                visibility: visible;
+            }
+
+
+            /*Hero Section*/
+            main{
+                height: 800px;
+                margin-top: 130px;
+            }
+
+            /*mobile view heading*/
+            main>section:first-child>h1{
+                visibility: visible;
+                width: 400px;
+                height: fit-content;
+                font-family: "Lato", sans-serif,system-ui;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 43px;
+                left: 30px;
+                top: 70px;
+                position: relative;
+            }
+
+            main>section:first-child>img{
+                width: 330px;
+                height: 330px;
+                left: 40px;
+                position: relative;
+                top: 100px;
+
+
+                /*animation-name: homepage-animation1;
+                animation-duration: 2s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 1s;*!
+                animation-play-state: running;*/
+            }
+
+            /*@keyframes homepage-animation1 {
+                from{
+                    left: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+            main>section:last-child{
+                width: 380px;
+                height: 240px;
+                left: 5px;
+                top: 100px;
+                position: relative;
+                /*border: 3px solid red;*/
+            }
+
+
+            main>section:last-child>h1{
+                visibility: hidden;
+
+            }
+
+            main>section:last-child>h3{
+                font-size: 33px;
+                padding: 8px 5px;
+            }
+
+            main>section:last-child>p{
+                font-size: 18px;
+                padding: 8px 5px;
+            }
+
+        }
+
+        /*responsive by media query size- mobile medium - width 375px*/
+        @media all and (max-width: 375px){
+
+            /*header styling*/
+
+            header{
+
+                height: 130px;
+
+            }
+
+            header>#headerdiv>a>img{
+                border-radius: 100%;
+                padding: 23px 11px;
+                width: 35px;
+                height: 35px;
+            }
+
+
+            header>#headerdiv>a:nth-child(2){
+                width: 215px;
+                height: fit-content;
+                padding: 0;
+                margin-top: 8px;
+                left: 50px;
+            }
+
+
+            header>#headerdiv>a:nth-child(2)>h2{
+                font-size: 23px;
+            }
+
+
+            header>#headerdiv>#headertopic{
+                width: 210px;
+                font-size: 18px;
+                padding: 0;
+                margin-top: 63px;
+                left: 50px;
+            }
+
+
+            header>#headernav{
+                visibility: hidden;
+            }
+
+            header>#headernav>a{
+                padding: 0 5px;
+            }
+
+            /*mobile menubar*/
+            header>section>img{
+                visibility: visible;
+                position: absolute;
+                width: 33px;
+                height: 33px;
+                right: 18px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+
+            /*footer styling*/
+            footer{
+                height: 130px;
+            }
+
+            footer>#contactnav{
+                height: 40px;
+                width: 130px;
+                top: 100px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                position: relative;
+            }
+
+            footer>#contactnav>a>img{
+                padding: 0 5px;
+                width: 20px;
+                height: 20px;
+            }
+
+
+            footer>div>h6{
+                height: fit-content;
+                width: 250px;
+                font-size: 14px;
+                left: 100px;
+                top: 3px;
+                position: relative;
+            }
+
+            footer>div>img{
+                width: 18px;
+                height: 18px;
+                top: 23px;
+                left: 78px;
+                position: relative;
+            }
+
+            footer>#pagenav{
+                width: fit-content;
+                height: fit-content;
+                font-size: 14px;
+                position: relative;
+                top: -10px;
+                left: 0;
+                bottom: 0;
+                margin: auto;
+            }
+
+            footer>#pagenav>a{
+                padding: 0 3px;
+            }
+
+            footer>#pagenav>span{
+                visibility: visible;
+            }
+
+
+            /*Hero Section*/
+            main{
+                height: 800px;
+                margin-top: 130px;
+            }
+
+            /*mobile view heading*/
+            main>section:first-child>h1{
+                visibility: visible;
+                width: 360px;
+                height: fit-content;
+                font-family: "Lato", sans-serif,system-ui;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 40px;
+                left: 20px;
+                top: 70px;
+                position: relative;
+            }
+
+            main>section:first-child>img{
+                width: 330px;
+                height: 330px;
+                left: 20px;
+                position: relative;
+                top: 90px;
+
+
+                /*animation-name: homepage-animation1;
+                animation-duration: 2s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 1s;*!
+                animation-play-state: running;*/
+            }
+
+            /*@keyframes homepage-animation1 {
+                from{
+                    left: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+            main>section:last-child{
+                width: 330px;
+                height: 240px;
+                left: 5px;
+                top: 110px;
+                position: relative;
+                /*border: 3px solid red;*/
+            }
+
+
+            main>section:last-child>h1{
+                visibility: hidden;
+                font-size: 1px;
+
+            }
+
+            main>section:last-child>h3{
+                font-size: 30px;
+                padding: 10px 5px;
+            }
+
+            main>section:last-child>p{
+                font-size: 18px;
+                padding: 8px 5px;
+            }
+
+        }
+
+        /*responsive by media query size- mobile small - width 320px*/
+        @media all and (max-width: 320px){
+
+            /*header styling*/
+
+            header{
+
+                height: 110px;
+
+            }
+
+            header>#headerdiv>a>img{
+                border-radius: 100%;
+                padding: 23px 11px;
+                width: 30px;
+                height: 30px;
+            }
+
+
+            header>#headerdiv>a:nth-child(2){
+                width: 215px;
+                height: fit-content;
+                padding: 0;
+                margin-top: 8px;
+                left: 45px;
+            }
+
+
+            header>#headerdiv>a:nth-child(2)>h2{
+                font-size: 21px;
+            }
+
+
+            header>#headerdiv>#headertopic{
+                width: 210px;
+                font-size: 18px;
+                padding: 0;
+                margin-top: 55px;
+                left: 45px;
+            }
+
+
+            header>#headernav{
+                visibility: hidden;
+            }
+
+            header>#headernav>a{
+                padding: 0 5px;
+            }
+
+            /*mobile menubar*/
+            header>section>img{
+                visibility: visible;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                right: 18px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+
+            /*footer styling*/
+            footer{
+                height: 130px;
+            }
+
+            footer>#contactnav{
+                height: 40px;
+                width: 130px;
+                top: 100px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                position: relative;
+            }
+
+            footer>#contactnav>a>img{
+                padding: 0 5px;
+                width: 20px;
+                height: 20px;
+            }
+
+
+            footer>div>h6{
+                height: fit-content;
+                width: 250px;
+                font-size: 14px;
+                left: 70px;
+                top: 3px;
+                position: relative;
+            }
+
+            footer>div>img{
+                width: 18px;
+                height: 18px;
+                top: 23px;
+                left: 48px;
+                position: relative;
+            }
+
+            footer>#pagenav{
+                width: fit-content;
+                height: fit-content;
+                font-size: 13px;
+                position: relative;
+                top: -10px;
+                left: 0;
+                bottom: 0;
+                margin: auto;
+            }
+
+            footer>#pagenav>a{
+                padding: 0 3px;
+            }
+
+            footer>#pagenav>span{
+                visibility: visible;
+            }
+
+
+            /*Hero Section*/
+            main{
+                height: 800px;
+                margin-top: 110px;
+            }
+
+            /*mobile view heading*/
+            main>section:first-child>h1{
+                visibility: visible;
+                width: 290px;
+                height: fit-content;
+                font-family: "Lato", sans-serif,system-ui;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 33px;
+                left: 20px;
+                top: 70px;
+                position: relative;
+            }
+
+            main>section:first-child>img{
+                width: 290px;
+                height: 290px;
+                left: 13px;
+                position: relative;
+                top: 90px;
+
+
+                /*animation-name: homepage-animation1;
+                animation-duration: 2s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 1s;*!
+                animation-play-state: running;*/
+            }
+
+            /*@keyframes homepage-animation1 {
+                from{
+                    left: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+            main>section:last-child{
+                width: 290px;
+                height: 240px;
+                left: 5px;
+                top: 110px;
+                position: relative;
+                /*border: 3px solid red;*/
+            }
+
+
+            main>section:last-child>h1{
+                visibility: hidden;
+                font-size: 1px;
+
+            }
+
+            main>section:last-child>h3{
+                font-size: 30px;
+                padding: 10px 5px;
+            }
+
+            main>section:last-child>p{
+                font-size: 18px;
+                padding: 8px 5px;
+            }
+
+        }
 
 
 
@@ -361,6 +1261,10 @@
         <a href="HTML/7_Personal-page.html">Personal</a><span>|</span>
         <a href="HTML/10_Contact-page.html">Contact</a><span>|</span>
     </nav>
+    <!--Mobile Nav-->
+    <section>
+        <img src="assets/header-footer-icons/icons8-menu-bar-50.png" title="mobile menu bar" alt="mobile menu bar" width="50" height="50">
+    </section>
 </header>
 
 
@@ -369,6 +1273,8 @@
 <main>
     <!--Image Hero Section-->
     <section>
+        <!--Mobile View Heading-->
+        <h1>Kalana Sachinthana</h1>
         <img src="assets/images/my-images/img1.jpg" title="homepage self image" alt="homepage self image" width="641" height="642">
     </section>
     <!--Welcoming Paragraphs-->
@@ -379,6 +1285,8 @@
             I'm currently studying for a Graduate Diploma in Software Engineering at IJSE Panadura, Sri Lanka. I’m passionate about using software to address everyday challenges and contribute to making the world a better place.
         </p>
     </section>
+
+
 </main>
 
 
@@ -398,10 +1306,10 @@
     </div>
     <!--Page Nav-->
     <nav id="pagenav">
-        <a href="HTML/2_About-page.html">About</a>
-        <a href="HTML/3_Resume-page.html">Resume</a>
-        <a href="HTML/4_Projects-page.html">Projects</a>
-        <a href="HTML/7_Personal-page.html">Personal</a>
+        <a href="HTML/2_About-page.html">About</a><span>|</span>
+        <a href="HTML/3_Resume-page.html">Resume</a><span>|</span>
+        <a href="HTML/4_Projects-page.html">Projects</a><span>|</span>
+        <a href="HTML/7_Personal-page.html">Personal</a><span>|</span>
         <a href="HTML/10_Contact-page.html">Contact</a>
     </nav>
 </footer>
