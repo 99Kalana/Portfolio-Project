@@ -191,6 +191,11 @@ footer>#pagenav>a:active{
     color: #ff8a33;
 }
 
+/*footer separate bar*/
+footer>#pagenav>span{
+    visibility: hidden;
+}
+
 
 
 /*responsive by media query size- laptop large - width 1440px*/
