@@ -203,12 +203,20 @@
             font-style: normal;
             font-size: 22px;
             list-style: none;
+            /*border: 5px solid rosybrown;*/
+            width: fit-content;
+
+            /* Add flexbox to enable vertical and horizontal centering */
+            display: flex;
+            align-items: center; /* Vertically center */
+            justify-content: center; /* Horizontally center */
         }
 
 
         main>section:last-child>div>div>ul>li>ul>li>img{
             padding: 10px 10px;
         }
+
 
 
     </style>
@@ -335,10 +343,10 @@
     </div>
     <!--Page Nav-->
     <nav id="pagenav">
-        <a href="2_About-page.html">About</a>
-        <a href="3_Resume-page.html">Resume</a>
-        <a href="4_Projects-page.html">Projects</a>
-        <a href="7_Personal-page.html">Personal</a>
+        <a href="2_About-page.html">About</a><span>|</span>
+        <a href="3_Resume-page.html">Resume</a><span>|</span>
+        <a href="4_Projects-page.html">Projects</a><span>|</span>
+        <a href="7_Personal-page.html">Personal</a><span>|</span>
         <a href="10_Contact-page.html">Contact</a>
     </nav>
 </footer>
