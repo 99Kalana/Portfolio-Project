@@ -114,6 +114,11 @@ header>#headernav>span:last-child{
     display: none;
 }
 
+/*mobile menubar*/
+header>section>img{
+    visibility: hidden;
+}
+
 /*footer styling*/
 footer{
     position: relative;
@@ -248,6 +253,11 @@ footer>#pagenav>span{
     }
 
 
+    /*mobile menubar*/
+    header>section>img{
+        visibility: hidden;
+    }
+
 
     /*footer styling*/
     footer{
@@ -347,6 +357,11 @@ footer>#pagenav>span{
     }
 
 
+    /*mobile menubar*/
+    header>section>img{
+        visibility: hidden;
+    }
+
 
     /*footer styling*/
     footer{
@@ -437,6 +452,11 @@ footer>#pagenav>span{
 
     header>#headernav>a{
         padding: 0 5px;
+    }
+
+    /*mobile menubar*/
+    header>section>img{
+        visibility: hidden;
     }
 
     /*footer styling*/
