@@ -38,6 +38,11 @@
             background: linear-gradient(45deg, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
         }
 
+        /*Mobile View Heading*/
+        main>section:first-child>section:first-child>h2{
+            visibility: hidden;
+        }
+
         main>section:first-child>section:first-child>img{
             position: absolute;
             width: 400px;
@@ -47,17 +52,17 @@
             border: 2px ridge whitesmoke;
             visibility: inherit;
 
-            animation-name: about-page-animation1;
+            /*animation-name: about-page-animation1;
             animation-duration: 2s;
             animation-iteration-count: initial;
             animation-timing-function: ease-in;
             animation-direction: normal;
-            /*animation-delay: 1s;*/
-            animation-play-state: running;
+            !*animation-delay: 1s;*!
+            animation-play-state: running;*/
 
         }
 
-        @keyframes about-page-animation1 {
+        /*@keyframes about-page-animation1 {
             from{
                 opacity: 0;
                 visibility: hidden;
@@ -66,6 +71,11 @@
                 opacity: 1;
                 visibility: visible;
             }
+        }*/
+
+        /*mobile menubar*/
+        header>section>img{
+            visibility: hidden;
         }
 
         main>section:first-child>section:last-child{
@@ -78,17 +88,17 @@
             color: whitesmoke;
             visibility: inherit;
 
-            animation-name: about-page-animation2;
+            /*animation-name: about-page-animation2;
             animation-duration: 2s;
             animation-iteration-count: initial;
             animation-timing-function: ease-in;
             animation-direction: normal;
-            /*animation-delay: 1s;*/
-            animation-play-state: running;
+            !*animation-delay: 1s;*!
+            animation-play-state: running;*/
 
         }
 
-        @keyframes about-page-animation2 {
+        /*@keyframes about-page-animation2 {
             from{
                 opacity: 0;
                 visibility: hidden;
@@ -97,7 +107,7 @@
                 opacity: 1;
                 visibility: visible;
             }
-        }
+        }*/
 
         main>section:first-child>section:last-child>h2{
             font-family: "Lato", sans-serif,system-ui;
@@ -139,18 +149,18 @@
             top: 690px;
             visibility: inherit;
 
-            animation-name: about-page-animation3;
+            /*animation-name: about-page-animation3;
             animation-duration: 3s;
             animation-iteration-count: initial;
             animation-timing-function: ease-in;
             animation-direction: normal;
-            /*animation-delay: 2s;*/
-            animation-play-state: running;
+            !*animation-delay: 2s;*!
+            animation-play-state: running;*/
 
 
         }
 
-        @keyframes about-page-animation3 {
+        /*@keyframes about-page-animation3 {
             from{
                 opacity: 0;
                 visibility: hidden;
@@ -159,7 +169,7 @@
                 opacity: 1;
                 visibility: visible;
             }
-        }
+        }*/
 
         main>section:last-child>h3{
             font-family: "Lato", sans-serif,system-ui;
@@ -218,6 +228,1194 @@
         }
 
 
+        /*responsive by media query size- laptop large - width 1440px*/
+        @media all and (max-width: 1440px){
+
+            main{
+                height: 1600px;
+                margin-top: 150px;
+            }
+
+            /*Mobile View Heading*/
+            main>section:first-child>section:first-child>h2{
+                visibility: hidden;
+            }
+
+            /*mobile menubar*/
+            header>section>img{
+                visibility: hidden;
+            }
+
+            main>section:first-child>section:first-child>img{
+                width: 400px;
+                height: 416px;
+                margin-left: 80px;
+                margin-top: 160px;
+                border: 2px ridge whitesmoke;
+                visibility: inherit;
+
+                /*animation-name: about-page-animation1;
+                animation-duration: 2s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 1s;*!
+                animation-play-state: running;*/
+
+            }
+
+            /*@keyframes about-page-animation1 {
+                from{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+            main>section:first-child>section:last-child{
+                position: absolute;
+                width: 830px;
+                height: 452px;
+                /*border: 3px solid red;*/
+                margin-left: 530px;
+                margin-top: 120px;
+                color: whitesmoke;
+                visibility: inherit;
+
+                /*animation-name: about-page-animation2;
+                animation-duration: 2s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 1s;*!
+                animation-play-state: running;*/
+
+            }
+
+            /*@keyframes about-page-animation2 {
+                from{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+            main>section:first-child>section:last-child>h2{
+                font-family: "Lato", sans-serif,system-ui;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 68px;
+                width: 300px;
+                height: 70px;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            main>section:first-child>section:last-child>div{
+                font-family: "Prompt", sans-serif,system-ui;
+                font-weight: 330;
+                font-style: normal;
+                font-size: 22px;
+                width: 830px;
+                height: 300px;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            main>section:first-child>section:last-child>div>p{
+                padding: 13px 0;
+            }
+
+            main>section:last-child{
+                position: absolute;
+                width: 1300px;
+                height: 890px;
+                color: whitesmoke;
+                /*border: 3px solid red;*/
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 690px;
+                visibility: inherit;
+
+                /*animation-name: about-page-animation3;
+                animation-duration: 3s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 2s;*!
+                animation-play-state: running;*/
+
+
+            }
+
+            /*@keyframes about-page-animation3 {
+                from{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+
+
+        }
+
+
+        /*responsive by media query size- laptop - width 1024px*/
+        @media all and (max-width: 1024px){
+
+            main{
+                height: 1490px;
+                margin-top: 150px;
+            }
+
+            /*Mobile View Heading*/
+            main>section:first-child>section:first-child>h2{
+                visibility: hidden;
+            }
+
+            /*mobile menubar*/
+            header>section>img{
+                visibility: hidden;
+            }
+
+            main>section:first-child>section:first-child>img{
+                position: absolute;
+                width: 300px;
+                height: 316px;
+                margin-left: 50px;
+                margin-top: 100px;
+                border: 2px ridge whitesmoke;
+                visibility: inherit;
+
+                /*animation-name: about-page-animation1;
+                animation-duration: 2s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 1s;*!
+                animation-play-state: running;*/
+
+            }
+
+            /*@keyframes about-page-animation1 {
+                from{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+            main>section:first-child>section:last-child{
+                position: absolute;
+                width: 600px;
+                height: 316px;
+                /*border: 3px solid red;*/
+                margin-left: 380px;
+                margin-top: 100px;
+                color: whitesmoke;
+                visibility: inherit;
+
+                /*animation-name: about-page-animation2;
+                animation-duration: 2s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 1s;*!
+                animation-play-state: running;*/
+
+            }
+
+            /*@keyframes about-page-animation2 {
+                from{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+            main>section:first-child>section:last-child>h2{
+                font-size: 36px;
+                width: max-content;
+                height: fit-content;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            main>section:first-child>section:last-child>div{
+                font-family: "Prompt", sans-serif,system-ui;
+                font-weight: 330;
+                font-style: normal;
+                font-size: 18px;
+                width: 600px;
+                height: 300px;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            main>section:first-child>section:last-child>div>p{
+                padding: 3px 0;
+            }
+
+            main>section:last-child{
+                position: absolute;
+                width: 1024px;
+                height: 890px;
+                color: whitesmoke;
+                /*border: 3px solid red;*/
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 550px;
+                visibility: inherit;
+
+                /*animation-name: about-page-animation3;
+                animation-duration: 3s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 2s;*!
+                animation-play-state: running;*/
+
+
+            }
+
+            /*@keyframes about-page-animation3 {
+                from{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+            main>section:last-child>h3{
+                font-family: "Lato", sans-serif,system-ui;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 40px;
+                height: 60px;
+                width: fit-content;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 0;
+            }
+
+
+            main>section:last-child>div{
+                width: 1024px;
+                height: 700px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                left: 0;
+                right: 0;
+                margin: 60px auto;
+
+            }
+
+            main>section:last-child>div>div{
+                padding: 10px 80px;
+            }
+
+            main>section:last-child>div>div>ul>li>h5{
+                font-family: "Prompt", sans-serif,system-ui;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 21px;
+            }
+
+            main>section:last-child>div>div>ul>li>ul>li{
+                font-family: "Prompt", sans-serif,system-ui;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 18px;
+                list-style: none;
+                /*border: 5px solid rosybrown;*/
+                width: fit-content;
+
+                /* Add flexbox to enable vertical and horizontal centering */
+                display: flex;
+                align-items: center; /* Vertically center */
+                justify-content: center; /* Horizontally center */
+            }
+
+
+            main>section:last-child>div>div>ul>li>ul>li>img{
+                padding: 10px 10px;
+            }
+
+        }
+
+
+        /*responsive by media query size- tab - width 768x*/
+        @media all and (max-width: 768px){
+
+            main{
+                height: 1300px;
+                margin-top: 150px;
+            }
+
+            /*Mobile View Heading*/
+            main>section:first-child>section:first-child>h2{
+                visibility: hidden;
+            }
+
+            /*mobile menubar*/
+            header>section>img{
+                visibility: hidden;
+            }
+
+            main>section:first-child>section:first-child>img{
+                position: absolute;
+                width: 212px;
+                height: 220px;
+                margin-left: 20px;
+                margin-top: 80px;
+                border: 2px ridge whitesmoke;
+                visibility: inherit;
+
+                /*animation-name: about-page-animation1;
+                animation-duration: 2s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 1s;*!
+                animation-play-state: running;*/
+
+            }
+
+            /*@keyframes about-page-animation1 {
+                from{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+            main>section:first-child>section:last-child{
+                position: absolute;
+                width: 498px;
+                height: fit-content;
+                /*border: 3px solid red;*/
+                margin-left: 250px;
+                margin-top: 30px;
+                color: whitesmoke;
+                visibility: inherit;
+
+                /*animation-name: about-page-animation2;
+                animation-duration: 2s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 1s;*!
+                animation-play-state: running;*/
+
+            }
+
+            /*@keyframes about-page-animation2 {
+                from{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+            main>section:first-child>section:last-child>h2{
+                font-size: 26px;
+                width: max-content;
+                height: fit-content;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            main>section:first-child>section:last-child>div{
+                font-family: "Prompt", sans-serif,system-ui;
+                font-weight: 330;
+                font-style: normal;
+                font-size: 16px;
+                width: 498px;
+                height: fit-content;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            main>section:first-child>section:last-child>div>p{
+                padding:  0;
+            }
+
+            main>section:last-child{
+                position: absolute;
+                width: 768px;
+                height: 890px;
+                color: whitesmoke;
+                /*border: 3px solid red;*/
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 470px;
+                visibility: inherit;
+
+                /*animation-name: about-page-animation3;
+                animation-duration: 3s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 2s;*!
+                animation-play-state: running;*/
+
+
+            }
+
+            /*@keyframes about-page-animation3 {
+                from{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+            main>section:last-child>h3{
+                font-family: "Lato", sans-serif,system-ui;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 30px;
+                height: 60px;
+                width: fit-content;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 0;
+            }
+
+
+            main>section:last-child>div{
+                width: 768px;
+                height: 700px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                left: 0;
+                right: 0;
+                margin: 30px auto;
+
+            }
+
+            main>section:last-child>div>div{
+                padding: 10px 30px;
+            }
+
+            main>section:last-child>div>div>ul>li>h5{
+                font-family: "Prompt", sans-serif,system-ui;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 18px;
+            }
+
+
+
+            main>section:last-child>div>div>ul>li>ul>li{
+                font-family: "Prompt", sans-serif,system-ui;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 15px;
+                list-style: none;
+                /*border: 5px solid rosybrown;*/
+                width: fit-content;
+
+                /* Add flexbox to enable vertical and horizontal centering */
+                display: flex;
+                align-items: center; /* Vertically center */
+                justify-content: center; /* Horizontally center */
+            }
+
+
+            main>section:last-child>div>div>ul>li>ul>li>img{
+                padding: 10px 10px;
+            }
+
+        }
+
+        /*responsive by media query size- mobile large - width 425x*/
+        @media all and (max-width: 425px){
+
+            main{
+                position: relative;
+                width: 100%;
+                height: 2300px;
+                margin-top: 130px;
+                background: linear-gradient(45deg, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
+            }
+
+            /*Mobile View Heading*/
+            main>section:first-child>section:first-child>h2{
+                visibility: visible;
+                font-family: "Lato", sans-serif,system-ui;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 50px;
+                color: white;
+                width: fit-content;
+                height: fit-content;
+                left: 0;
+                right: 0;
+                margin: auto;
+                padding: 30px 0;
+            }
+
+            /*mobile menubar*/
+            header>section>img{
+                visibility: visible;
+                position: absolute;
+                width: 33px;
+                height: 33px;
+                right: 18px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+
+            main>section:first-child>section:first-child>img{
+                position: absolute;
+                width: 300px;
+                height: 316px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                border: 2px ridge whitesmoke;
+                visibility: inherit;
+
+                /*animation-name: about-page-animation1;
+                animation-duration: 2s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 1s;*!
+                animation-play-state: running;*/
+
+            }
+
+            /*@keyframes about-page-animation1 {
+                from{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+            main>section:first-child>section:last-child{
+                position: absolute;
+                width: 390px;
+                height: 600px;
+                /*border: 3px solid red;*/
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 460px;
+                color: whitesmoke;
+                visibility: inherit;
+
+                /*animation-name: about-page-animation2;
+                animation-duration: 2s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 1s;*!
+                animation-play-state: running;*/
+
+            }
+
+            /*@keyframes about-page-animation2 {
+                from{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+            main>section:first-child>section:last-child>h2{
+                visibility: hidden;
+                font-size: 0;
+                width:  0;
+                height: 0;
+            }
+
+            main>section:first-child>section:last-child>div{
+                font-family: "Prompt", sans-serif,system-ui;
+                font-weight: 330;
+                font-style: normal;
+                font-size: 20px;
+                width: 360px;
+                height: 500px;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            main>section:first-child>section:last-child>div>p{
+                padding: 8px 0;
+            }
+
+            main>section:last-child{
+                position: absolute;
+                width: 380px;
+                height: 1190px;
+                color: whitesmoke;
+                /*border: 3px solid red;*/
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 1080px;
+                visibility: inherit;
+
+                /*animation-name: about-page-animation3;
+                animation-duration: 3s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 2s;*!
+                animation-play-state: running;*/
+
+
+            }
+
+            /*@keyframes about-page-animation3 {
+                from{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+            main>section:last-child>h3{
+                font-family: "Lato", sans-serif,system-ui;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 27px;
+                height: fit-content;
+                width: fit-content;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 0;
+            }
+
+
+            main>section:last-child>div{
+                width: 360px;
+                height: 1100px;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                left: 0;
+                right: 0;
+                margin: 30px auto;
+
+            }
+
+            main>section:last-child>div>div{
+                padding: 0;
+            }
+
+            main>section:last-child>div>div>ul>li>h5{
+                font-family: "Prompt", sans-serif,system-ui;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 20px;
+            }
+
+            main>section:last-child>div>div>ul>li>ul>li{
+                font-family: "Prompt", sans-serif,system-ui;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 18px;
+                list-style: none;
+                /*border: 5px solid rosybrown;*/
+                width: fit-content;
+
+                /* Add flexbox to enable vertical and horizontal centering */
+                display: flex;
+                align-items: center; /* Vertically center */
+                justify-content: center; /* Horizontally center */
+            }
+
+
+            main>section:last-child>div>div>ul>li>ul>li>img{
+                padding: 10px 10px;
+            }
+
+        }
+
+        /*responsive by media query size- mobile medium - width 375px*/
+        @media all and (max-width: 375px){
+
+            main{
+                width: 100%;
+                height: 2300px;
+            }
+
+            /*Mobile View Heading*/
+            main>section:first-child>section:first-child>h2{
+                visibility: visible;
+                font-family: "Lato", sans-serif,system-ui;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 45px;
+                color: white;
+                width: fit-content;
+                height: fit-content;
+                left: 0;
+                right: 0;
+                margin: auto;
+                padding: 30px 0;
+            }
+
+            /*mobile menubar*/
+            header>section>img{
+                visibility: visible;
+                position: absolute;
+                width: 33px;
+                height: 33px;
+                right: 18px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+
+            main>section:first-child>section:first-child>img{
+                position: absolute;
+                width: 290px;
+                height: 306px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                border: 2px ridge whitesmoke;
+                visibility: inherit;
+
+                /*animation-name: about-page-animation1;
+                animation-duration: 2s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 1s;*!
+                animation-play-state: running;*/
+
+            }
+
+            /*@keyframes about-page-animation1 {
+                from{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+            main>section:first-child>section:last-child{
+                position: absolute;
+                width: 370px;
+                height: 600px;
+                /*border: 3px solid red;*/
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 440px;
+                color: whitesmoke;
+                visibility: inherit;
+
+                /*animation-name: about-page-animation2;
+                animation-duration: 2s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 1s;*!
+                animation-play-state: running;*/
+
+            }
+
+            /*@keyframes about-page-animation2 {
+                from{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+            main>section:first-child>section:last-child>h2{
+                visibility: hidden;
+                font-size: 0;
+                width:  0;
+                height: 0;
+            }
+
+            main>section:first-child>section:last-child>div{
+                font-family: "Prompt", sans-serif,system-ui;
+                font-weight: 330;
+                font-style: normal;
+                font-size: 20px;
+                width: 347px;
+                height: 500px;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            main>section:first-child>section:last-child>div>p{
+                padding: 8px 0;
+            }
+
+            main>section:last-child{
+                position: absolute;
+                width: 370px;
+                height: 1190px;
+                color: whitesmoke;
+                /*border: 3px solid red;*/
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 1060px;
+                visibility: inherit;
+
+                /*animation-name: about-page-animation3;
+                animation-duration: 3s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 2s;*!
+                animation-play-state: running;*/
+
+
+            }
+
+            /*@keyframes about-page-animation3 {
+                from{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+            main>section:last-child>h3{
+                font-family: "Lato", sans-serif,system-ui;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 25px;
+                height: fit-content;
+                width: fit-content;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 0;
+            }
+
+
+            main>section:last-child>div{
+                width: 360px;
+                height: 1100px;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                left: 0;
+                right: 0;
+                margin: 30px auto;
+
+            }
+
+            main>section:last-child>div>div{
+                padding: 0;
+            }
+
+            main>section:last-child>div>div>ul>li>h5{
+                font-family: "Prompt", sans-serif,system-ui;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 19px;
+            }
+
+            main>section:last-child>div>div>ul>li>ul>li{
+                font-family: "Prompt", sans-serif,system-ui;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 17px;
+                list-style: none;
+                /*border: 5px solid rosybrown;*/
+                width: fit-content;
+
+                /* Add flexbox to enable vertical and horizontal centering */
+                display: flex;
+                align-items: center; /* Vertically center */
+                justify-content: center; /* Horizontally center */
+            }
+
+
+            main>section:last-child>div>div>ul>li>ul>li>img{
+                padding: 10px 10px;
+            }
+
+        }
+
+        /*responsive by media query size- mobile small - width 320px*/
+        @media all and (max-width: 320px){
+
+            main{
+                width: 100%;
+                height: 2200px;
+                margin-top: 110px;
+            }
+
+            /*Mobile View Heading*/
+            main>section:first-child>section:first-child>h2{
+                visibility: visible;
+                font-family: "Lato", sans-serif,system-ui;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 40px;
+                color: white;
+                width: fit-content;
+                height: fit-content;
+                left: 0;
+                right: 0;
+                margin: auto;
+                padding: 30px 0;
+            }
+
+            /*mobile menubar*/
+            header>section>img{
+                visibility: visible;
+                position: absolute;
+                width: 33px;
+                height: 33px;
+                right: 18px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+
+            main>section:first-child>section:first-child>img{
+                position: absolute;
+                width: 260px;
+                height: 276px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                border: 2px ridge whitesmoke;
+                visibility: inherit;
+
+                /*animation-name: about-page-animation1;
+                animation-duration: 2s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 1s;*!
+                animation-play-state: running;*/
+
+            }
+
+            /*@keyframes about-page-animation1 {
+                from{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+            main>section:first-child>section:last-child{
+                position: absolute;
+                width: 310px;
+                height: 550px;
+                /*border: 3px solid red;*/
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 410px;
+                color: whitesmoke;
+                visibility: inherit;
+
+                /*animation-name: about-page-animation2;
+                animation-duration: 2s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 1s;*!
+                animation-play-state: running;*/
+
+            }
+
+            /*@keyframes about-page-animation2 {
+                from{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+            main>section:first-child>section:last-child>h2{
+                visibility: hidden;
+                font-size: 0;
+                width:  0;
+                height: 0;
+            }
+
+            main>section:first-child>section:last-child>div{
+                font-family: "Prompt", sans-serif,system-ui;
+                font-weight: 330;
+                font-style: normal;
+                font-size: 18px;
+                width: 270px;
+                height: 500px;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            main>section:first-child>section:last-child>div>p{
+                padding: 5px 0;
+            }
+
+            main>section:last-child{
+                position: absolute;
+                width: 310px;
+                height: 1130px;
+                color: whitesmoke;
+                /*border: 3px solid red;*/
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 1000px;
+                visibility: inherit;
+
+                /*animation-name: about-page-animation3;
+                animation-duration: 3s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+                animation-direction: normal;
+                !*animation-delay: 2s;*!
+                animation-play-state: running;*/
+
+
+            }
+
+            /*@keyframes about-page-animation3 {
+                from{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                to{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }*/
+
+            main>section:last-child>h3{
+                font-family: "Lato", sans-serif,system-ui;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 21px;
+                height: fit-content;
+                width: fit-content;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 0;
+            }
+
+
+            main>section:last-child>div{
+                width: 290px;
+                height: 1100px;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                left: 0;
+                right: 0;
+                margin: 20px auto;
+
+            }
+
+            main>section:last-child>div>div{
+                padding: 0;
+            }
+
+            main>section:last-child>div>div>ul>li>h5{
+                font-family: "Prompt", sans-serif,system-ui;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 18px;
+            }
+
+            main>section:last-child>div>div>ul>li>ul>li{
+                font-family: "Prompt", sans-serif,system-ui;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 16px;
+                list-style: none;
+                /*border: 5px solid rosybrown;*/
+                width: fit-content;
+
+                /* Add flexbox to enable vertical and horizontal centering */
+                display: flex;
+                align-items: center; /* Vertically center */
+                justify-content: center; /* Horizontally center */
+            }
+
+
+            main>section:last-child>div>div>ul>li>ul>li>img{
+                padding: 10px 10px;
+            }
+
+        }
 
     </style>
 
@@ -240,6 +1438,10 @@
         <a href="7_Personal-page.html">Personal</a><span>|</span>
         <a href="10_Contact-page.html">Contact</a><span>|</span>
     </nav>
+    <!--Mobile Nav-->
+    <section>
+        <img src="../assets/header-footer-icons/icons8-menu-bar-50.png" title="mobile menu bar" alt="mobile menu bar" width="50" height="50">
+    </section>
 </header>
 
 
@@ -249,6 +1451,8 @@
     <!--About Me Section-->
     <section>
         <section>
+            <!--Mobile View Heading-->
+            <h2>About Me</h2>
             <!--Image Myself-->
             <img src="../assets/images/my-images/img2.jpg" title="image about me"alt="image about me" width="1836"height="1909">
         </section>
@@ -288,9 +1492,9 @@
                     <li><h5>Programming Languages and Database handlings such as:</h5>
                         <ul>
                             <!--List Content1-->
-                            <li><img src="../assets/about-page-icons/icons8-java-96.png" title="java icon" alt="java icon" width="60" height="60">&emsp;Java Programming Language</li>
+                            <li><img src="../assets/about-page-icons/icons8-java-100%20(1).png" title="java icon" alt="java icon" width="60" height="60">&emsp;Java Programming Language</li>
                             <li><img src="../assets/about-page-icons/icons8-object-oriented-programming-64.png" title="oop icon" alt="oop icon" width="60" height="60">&emsp;Object Oriented Programming</li>
-                            <li><img src="../assets/about-page-icons/icons8-mysql-144.png" title="sql icon"alt="sql icon" width="60"height="60">&emsp;SQL Databases</li>
+                            <li><img src="../assets/about-page-icons/icons8-mysql-100.png" title="sql icon"alt="sql icon" width="60"height="60">&emsp;SQL Databases</li>
                         </ul>
                     </li>
                 </ul>
