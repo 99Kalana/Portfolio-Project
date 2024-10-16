@@ -28,6 +28,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <!--Animate CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!--Animation AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
 
         main{
@@ -36,6 +42,7 @@
             height: 1600px;
             margin-top: 160px;
             background: linear-gradient(45deg, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
+            overflow: hidden;
         }
 
         /*Mobile View Heading*/
@@ -1407,12 +1414,12 @@
     <section>
         <section>
             <!--Mobile View Heading-->
-            <h2>About Me</h2>
+            <h2  class="animate__animated animate__fadeInDown  animate__slower    1s">About Me</h2>
             <!--Image Myself-->
-            <img src="../assets/images/my-images/img2.jpg" title="image about me"alt="image about me" width="1836"height="1909">
+            <img src="../assets/images/my-images/img2.jpg" class="animate__animated animate__zoomIn  animate__slower  1s" title="image about me"alt="image about me" width="1836"height="1909">
         </section>
         <!--About me content-->
-        <section>
+        <section class="animate__animated animate__slideInRight  animate__slower    1s">
             <!--About me heading-->
             <h2>About Me</h2>
             <!--About me paragraphs-->
@@ -1436,10 +1443,10 @@
     <!--Software Engineering interests content-->
     <section>
         <!--Heading-->
-        <h3>Software Engineering Interests</h3>
+        <h3 data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Software Engineering Interests</h3>
         <!--Content about Software engineering interests-->
 
-        <div>
+        <div data-aos="fade-up" data-aos-duration="3000">
 
             <div id="div1">
                 <ul>
@@ -1512,6 +1519,13 @@
 
 <!--Mobile Menubar Function-->
 <script src="mobile-view-menubar.js"></script>
+
+<!--AOS Animation-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
 
 </body>
 </html>
