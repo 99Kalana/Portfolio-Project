@@ -269,16 +269,16 @@
             left: 230px;
             visibility: inherit;
 
-            animation-name: homepage-animation1;
+            /*animation-name: homepage-animation1;
             animation-duration: 3s;
             animation-iteration-count: initial;
             animation-timing-function: ease-in;
             animation-direction: normal;
-            /*animation-delay: 1s;*/
-            animation-play-state: running;
+            !*animation-delay: 1s;*!
+            animation-play-state: running;*/
         }
 
-        @keyframes homepage-animation1 {
+        /*@keyframes homepage-animation1 {
             from{
                 left: 0;
                 opacity: 0;
@@ -288,7 +288,7 @@
                 opacity: 1;
                 visibility: visible;
             }
-        }
+        }*/
 
         main>section:last-child{
             position: absolute;
@@ -1657,8 +1657,8 @@
     <!--Image Hero Section-->
     <section>
         <!--Mobile View Heading-->
-        <h1>Kalana Sachinthana</h1>
-        <img src="assets/images/my-images/img1.jpg" title="homepage self image" alt="homepage self image" width="641" height="642">
+        <h1 class="animate__animated animate__fadeInDown  animate__slower    1s">Kalana Sachinthana</h1>
+        <img src="assets/images/my-images/img1.jpg" class="animate__animated animate__zoomIn  animate__slower    1s" title="homepage self image" alt="homepage self image" width="641" height="642">
     </section>
     <!--Welcoming Paragraphs-->
     <section class="animate__animated animate__slideInRight  animate__slower    1s">
