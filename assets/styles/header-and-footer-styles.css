@@ -752,7 +752,7 @@ footer>#pagenav>span{
 
         display: none;
         position: fixed;
-        height: 600px;
+        height: 800px;
         width: 100%;
         left: 0;
         right: 0;
@@ -764,9 +764,9 @@ footer>#pagenav>span{
 
         /* Flexbox for vertical centering */
 
-        flex-direction: column;
+        /*flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center;*/
     }
 
     header>#headernav>a{
@@ -817,8 +817,8 @@ footer>#pagenav>span{
 
     /* Show the nav when toggled */
     #headernav.show {
-        /*display: block;*/
-        display: flex;
+        display: block;
+        /*display: flex;*/
     }
 
     /*mobile menubar*/
