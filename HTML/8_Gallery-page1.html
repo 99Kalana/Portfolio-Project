@@ -483,7 +483,7 @@
                 left: 40.5px;
                 margin: 0;
                 padding: 0;
-                top: 360px;
+                top: 390px;
 
                 display: grid;
                 grid-template-columns: repeat(2,1fr);
@@ -513,7 +513,13 @@
                 border: 2px ridge white;
                 padding: 0;
                 margin: 0;
+                display: block;
 
+            }
+
+            /* To directly control spacing between images, use margin or gap, but not both */
+            main > section:last-child > img:not(:nth-child(2n)) {
+                margin-bottom: 10px; /* Add a consistent space between the rows of images */
             }
 
         }
