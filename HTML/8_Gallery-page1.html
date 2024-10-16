@@ -28,9 +28,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <!--Animate CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!--Animation AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
         main{
             position: relative;
+            overflow: hidden;
             margin-top: 160px;
             width: 100%;
             height: 771px;
@@ -641,13 +648,13 @@
 <!--Gallery page - Nature Photography Section-->
 <main>
     <!--Heading Section-->
-    <section>
+    <section class="animate__animated animate__backInLeft animate__slower">
         <h1>Nature</h1>
         <h1>Photography</h1>
         <h1>Collection</h1>
     </section>
     <!--Image Collection Section-->
-    <section>
+    <section data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
         <img src="../assets/images/personal-images/nature-photography-images/4.jpg" title="nature img1" alt="nature img1" width="201" height="268">
         <img src="../assets/images/personal-images/nature-photography-images/5.JPG" title="nature img2" alt="nature img2" width="201" height="268">
         <img src="../assets/images/personal-images/nature-photography-images/6.JPG" title="nature img3" alt="nature img3" width="201" height="268">
@@ -684,6 +691,13 @@
 
 <!--Mobile Menubar Function-->
 <script src="mobile-view-menubar.js"></script>
+
+<!--AOS Animation-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
 
 </body>
 </html>
