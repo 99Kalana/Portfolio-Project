@@ -28,6 +28,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <!--Animate CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!--Animation AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
 
         header{
@@ -36,6 +42,7 @@
 
         main{
             position: relative;
+            overflow: hidden;
             width: 100%;
             height: 900px;
             margin-top: 160px;
@@ -1418,33 +1425,33 @@
 <!--Contact Section-->
 <main>
     <!--Heading Section and Description Section-->
-    <section>
+    <section class="animate__animated animate__fadeInDownBig animate__slower">
         <!--Heading-->
         <h1>Contact</h1>
         <!--Description-->
         <h4>Get in touch with me via:</h4>
     </section>
     <!--Contact Nav Section-->
-    <nav id="n1">
+    <nav id="n1" data-aos="flip-left" data-aos-duration="3000">
         <!--Nav 1-->
 
             <a href="https://www.linkedin.com/in/kalana-sachinthana-69a94231b/" target="_blank"><img src="../assets/contact-page-icons/icons8-linked-in-240.png" title="linkedin icon" alt="linkedin icon" width="95" height="95">Linkedin</a>
 
     </nav>
-    <nav id="n2">
+    <nav id="n2" data-aos="flip-right" data-aos-duration="3000">
         <!--Nav 2-->
 
             <a href="mailto:kalanasachinthana8@gmail.com" target="_blank"><img src="../assets/contact-page-icons/icons8-gmail-240.png" title="gmail icon" alt="gmail icon" width="95" height="95">Gmail</a>
 
     </nav>
-    <nav id="n3">
+    <nav id="n3" data-aos="flip-down" data-aos-duration="3000">
 
             <a href="https://github.com/99Kalana?tab=repositories" target="_blank"><img src="../assets/contact-page-icons/icons8-github-240.png" title="github icon" alt="github icon" width="95" height="95">Github</a>
 
     </nav>
 
     <!--Image Section-->
-    <img src="../assets/images/my-images/img4.png" title="contact image myself" alt="contact image myself" width="430"height="493">
+    <img src="../assets/images/my-images/img4.png" data-aos="zoom-in-up" data-aos-duration="3000" title="contact image myself" alt="contact image myself" width="430"height="493">
 </main>
 
 
@@ -1474,6 +1481,13 @@
 
 <!--Mobile Menubar Function-->
 <script src="mobile-view-menubar.js"></script>
+
+<!--AOS Animation-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
 
 </body>
 </html>
