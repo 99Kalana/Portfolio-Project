@@ -28,11 +28,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <!--Animate CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!--Animation AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
 
         main{
             position: relative;
+            overflow: hidden;
             width: 100%;
             height: 1000px;
             margin-top: 160px;
@@ -1453,22 +1459,22 @@
 <!--Presentations/Assignment Section-->
 <main>
     <!--Heading-->
-    <h1>Presentations / Assignments</h1>
+    <h1 class="animate__animated animate__fadeInLeft animate__slow	2s">Presentations / Assignments</h1>
     <!--Images-->
-    <section id="s1">
+    <section id="s1" data-aos="fade-right" data-aos-duration="3000">
         <img src="../assets/images/projects-images/presentation-assignments-images/2.png" title="presentaions-assignments img1"alt="presentaions-assignments img1" width="280"height="150">
     </section>
-    <section id="s2">
+    <section id="s2" data-aos="fade-left" data-aos-duration="3000">
         <img src="../assets/images/projects-images/presentation-assignments-images/5.png" title="presentaions-assignments img2"alt="presentaions-assignments img2" width="280"height="150">
     </section>
-    <section id="s3">
+    <section id="s3" data-aos="fade-right" data-aos-duration="3000">
         <img src="../assets/images/projects-images/presentation-assignments-images/3.png" title="presentaions-assignments img3"alt="presentaions-assignments img3" width="280"height="150">
     </section>
-    <section id="s4">
+    <section id="s4" data-aos="fade-left" data-aos-duration="3000">
         <img src="../assets/images/projects-images/presentation-assignments-images/4.png" title="presentaions-assignments img4"alt="presentaions-assignments img4" width="280"height="150">
     </section>
     <!--Paragraph section-->
-    <section id="presentation-assignment-page-content">
+    <section id="presentation-assignment-page-content" data-aos="fade-left" data-aos-duration="3000">
         <!--Heading-->
         <h3>Presentation on Animal Hospital Management System</h3>
         <!--Paragraph Content-->
@@ -1505,6 +1511,13 @@
 
 <!--Mobile Menubar Function-->
 <script src="mobile-view-menubar.js"></script>
+
+<!--AOS Animation-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
 
 </body>
 </html>
