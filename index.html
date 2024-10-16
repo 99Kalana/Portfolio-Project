@@ -840,6 +840,8 @@
                 left: 70px;
             }
 
+            /*============================================================*/
+
 
             header>#headernav{
                 /*visibility: hidden;*/
@@ -928,7 +930,7 @@
                 margin: auto;
             }
 
-            /*==================================*/
+            /*======================================================*/
 
             /*footer styling*/
             footer{
@@ -1110,13 +1112,81 @@
                 left: 50px;
             }
 
+            /*==========================================*/
+
 
             header>#headernav{
-                visibility: hidden;
+                /*visibility: hidden;*/
+
+                display: none;
+                position: fixed;
+                height: 800px;
+                width: 100%;
+                left: 0;
+                right: 0;
+                margin-top: 130px;
+                opacity: 96%;
+                background-color: white;
+                text-align: center;
+                z-index: 10;
+
+                /* Flexbox for vertical centering */
+
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
 
             header>#headernav>a{
-                padding: 0 5px;
+                display: block;
+                padding: 20px 0;
+                font-size: 24px;
+                font-weight: 300;
+                text-decoration: none;
+                color: black;
+                transition: color 0.3s;
+            }
+
+            header>#headernav>span{
+                visibility: hidden;
+            }
+
+            header>#headernav>a:hover{
+                color: orange;
+            }
+
+            /*Menubar Icon*/
+            #menuIcon {
+                cursor: pointer;
+                padding: 10px;
+                position: absolute;
+                width: 36px;
+                height: 36px;
+                right: 18px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+
+
+            /* Close Menu Icon - Initially Hidden */
+            #closeMenu {
+                cursor: pointer;
+                padding: 10px;
+                position: absolute;
+                width: 36px;
+                height: 36px;
+                right: 18px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                display: none; /* Hidden initially */
+            }
+
+            /* Show the nav when toggled */
+            #headernav.show {
+                /*display: block;*/
+                display: flex;
             }
 
             /*mobile menubar*/
@@ -1130,6 +1200,8 @@
                 bottom: 0;
                 margin: auto;
             }
+
+            /*==========================================*/
 
             /*footer styling*/
             footer{
@@ -1309,6 +1381,7 @@
                 left: 45px;
             }
 
+            /*===================================================*/
 
             header>#headernav{
                 visibility: hidden;
@@ -1329,6 +1402,8 @@
                 bottom: 0;
                 margin: auto;
             }
+
+            /*===================================================*/
 
             /*footer styling*/
             footer{
