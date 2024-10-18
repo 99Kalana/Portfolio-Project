@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="description about the html page">
+    <meta name="keywords" content="java, html, css, js, go, react, angular">
+    <meta name="authour" content="IJSE-Karl">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/Cern-Logo-1954.png">
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <title>Assignment 4 - case 6</title>
+
+    <style>
+        /*Sky Background*/
+        main {
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+            background-image: url("../assets/assignment4_case6_resources/sky.jpg");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        main > section {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Cityscape background */
+        main > section > div:first-child {
+            width: 100vw;
+            height: 350px;
+            background-image: url("../assets/assignment4_case6_resources/city.png");
+            background-size: cover;
+            background-position: center bottom;
+            position: absolute;
+            bottom: 38vh;
+            z-index: 2;
+            animation: moveBackground 10s linear infinite;
+        }
+
+        /* Road at the bottom */
+        main > section > div:nth-child(2) {
+            width: 100vw;
+            height: 350px;
+            background-image: url("../assets/assignment4_case6_resources/road.jpg");
+            background-size: cover;
+            background-position: center bottom;
+            position: absolute;
+            bottom: 0;
+            z-index: 3;
+            animation: moveBackground 10s linear infinite;
+        }
+
+        /* Car on the road */
+        main > section > div:nth-child(3) {
+            width: 500px;
+            height: 500px;
+            background-image: url("../assets/assignment4_case6_resources/car.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            bottom: 70px;
+            left: 38%;
+            z-index: 4;
+        }
+
+
+        /*wheel rear in a car*/
+        main>section>div:nth-child(4){
+            width: 90px;
+            height: 90px;
+            background-image: url("../assets/assignment4_case6_resources/wheel.png");
+            background-size: cover;
+            background-position: center bottom;
+            position: absolute;
+            bottom: 220px;
+            left: 40.3%;
+            z-index: 5;
+            animation: rotateWheel 1s linear infinite;
+        }
+
+        /*wheel front in a car*/
+        main>section>div:nth-child(5){
+            width: 90px;
+            height: 90px;
+            background-image: url("../assets/assignment4_case6_resources/wheel.png");
+            background-size: cover;
+            background-position: center bottom;
+            position: absolute;
+            bottom: 220px;
+            left: 56.2%;
+            z-index: 5;
+            animation: rotateWheel 1s linear infinite;
+        }
+
+        /* Keyframes for moving the background (city and road) */
+        @keyframes moveBackground {
+            0% { background-position: 0 100%; }
+            100% { background-position: -100vw 100%; }
+        }
+
+        /* Keyframes for rotating the wheels */
+        @keyframes rotateWheel {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
+</body>
+</html>

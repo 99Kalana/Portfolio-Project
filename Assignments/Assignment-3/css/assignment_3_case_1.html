@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="description about the html page">
+    <meta name="keywords" content="java, html, css, js, go, react, angular">
+    <meta name="authour" content="IJSE-Karl">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/Cern-Logo-1954.png">
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <title>Internet-Technologies-CSS-assignment-3-case-1</title>
+
+
+    <style>
+
+        body{
+            /*overflow-x: hidden;
+            overflow-y: hidden;*/
+            overflow:hidden;
+        }
+
+        /*Main 4 squares*/
+        body>section{
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+        }
+
+        body>section:first-child{
+            background: red;
+        }
+
+        body>section:nth-child(2){
+            right: 0;
+            background: green;
+        }
+
+        body>section:nth-child(3){
+            bottom: 0;
+            background: gold;
+        }
+
+        body>section:nth-child(4){
+            bottom: 0;
+            right: 0;
+            background: hotpink;
+        }
+
+        /*Inner 4 Circles*/
+        body>section>div{
+            background: white;
+            width: 15vw;
+            height: 15vw;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        /*Inner 4 squares*/
+        body>section>div>div{
+            background: red;
+            width: 5vw;
+            height: 5vw;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        /*corner circles*/
+        .corner{
+            background: white;
+            width: 15vw;
+            height: 15vw;
+            position: absolute;
+            border-radius: 100%;
+        }
+
+        #corner1{
+            top: calc(-15vw/2);
+            left: calc(-15vw/2);
+        }
+
+        #corner2{
+            right: calc(-15vw/2);
+            top: calc(-15vw/2);
+        }
+
+        #corner3{
+            right: 0;
+            left: 0;
+            top: calc(-15vw/2); /*define the half size of circle by calc feature*/
+            margin: auto;
+        }
+
+        #corner4{
+            bottom: calc(-15vw/2);
+            left: calc(-15vw/2);
+        }
+
+        #corner5{
+            bottom: calc(-15vw/2);
+            right: calc(-15vw/2);
+        }
+
+        #corner6{
+            bottom: calc(-15vw/2);
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        /*Center circle and square*/
+        #mid {
+            width: 15vw;
+            height: 15vw;
+            background: white;
+            position: absolute;
+
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        #mid>div{
+            width: 10vw;
+            height: 10vw;
+            background: red;
+            position: absolute;
+            border-radius: 100%;
+
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<!--4 main squares and their inner circles, squares-->
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+
+<!--Corner Circles-->
+<div id="corner1" class="corner"></div>
+<div id="corner2" class="corner"></div>
+<div id="corner3" class="corner"></div>
+<div id="corner4" class="corner"></div>
+<div id="corner5" class="corner"></div>
+<div id="corner6" class="corner"></div>
+
+
+<!--Center Circle and Square-->
+<div id="mid">
+    <div></div>
+</div>
+
+
+</body>
+</html>

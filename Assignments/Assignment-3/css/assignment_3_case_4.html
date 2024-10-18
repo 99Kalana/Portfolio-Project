@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="description about the html page">
+    <meta name="keywords" content="java, html, css, js, go, react, angular">
+    <meta name="authour" content="IJSE-Karl">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/Cern-Logo-1954.png">
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <title>Internet-Technologies-CSS-assignment-3-case-4</title>
+
+    <!--font type adding-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+
+    <style>
+        body{
+            overflow-x: hidden;
+            margin: 0;
+        }
+
+        section{
+            width: 100%;
+            height: 1000px;
+            position: relative;
+
+            z-index: 1;
+        }
+
+        section>header{
+
+            width: 100%;
+            height: fit-content;
+            padding: 30px 50px;
+
+            color: white;
+
+            font-size: 50px;
+            font-family: "Ubuntu", sans-serif,system-ui;
+            font-weight: 500;
+            font-style: normal;
+
+
+            position: sticky;
+            top: 0;
+
+            z-index: 2;
+
+        }
+
+        section>div{
+            color: black;
+
+            font-size:70px;
+            font-family: "Ubuntu", sans-serif,system-ui;
+            font-weight: 500;
+            font-style: normal;
+
+            position: absolute;
+
+            left: 45%;
+            top: 50%;
+
+
+
+
+
+        }
+
+        #s1{
+            background: whitesmoke;
+        }
+
+        #s1>#h1{
+            background: red;
+        }
+
+        #s2{
+            background: lightskyblue;
+        }
+
+        #s2>#h2{
+            background: deepskyblue;
+        }
+
+        #s3{
+            background: lightgray;
+        }
+
+        #s3>#h3{
+            background: darkgrey;
+        }
+
+        #s4{
+            background: red;
+        }
+
+        #s4>#h4{
+            background: darkred;
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+<section id="s1">
+    <header id="h1">
+        card 1
+    </header>
+    <div id="d1">
+        Hello
+    </div>
+</section>
+
+<section id="s2">
+    <header id="h2">
+        card 2
+    </header>
+    <div id="d2">
+        How
+    </div>
+</section>
+
+<section id="s3">
+    <header id="h3">
+        card 3
+    </header>
+    <div id="d3">
+        Are
+    </div>
+</section>
+
+<section id="s4">
+    <header id="h4">
+        card 4
+    </header>
+    <div id="d4">
+        You...?
+    </div>
+</section>
+
+</body>
+</html>

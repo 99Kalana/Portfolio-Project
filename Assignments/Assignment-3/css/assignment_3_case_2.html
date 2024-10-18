@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="description about the html page">
+    <meta name="keywords" content="java, html, css, js, go, react, angular">
+    <meta name="authour" content="IJSE-Karl">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/Cern-Logo-1954.png">
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <title>Internet-Technologies-CSS-assignment-3-case-2</title>
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+
+
+    <style>
+
+        /*header section*/
+        header{
+            background-color: lightyellow;
+
+            height: 100px;
+
+            position: relative;
+
+        }
+
+        /*header image*/
+        header>img{
+            height: fit-content;
+            width: 100px;
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        header>nav{
+            /*background: #33a3e8;*/
+
+            height: fit-content;
+
+            position: absolute;
+
+            right: 10px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        header>nav>ul{
+            list-style: none;
+
+        }
+
+        header>nav>ul>li{
+            display: inline;
+            margin: 0px 10px;
+
+        }
+
+        /*footer section*/
+        footer{
+            background: gray;
+        }
+
+        footer>div{
+            color: white;
+            text-align: center; /*end(right),start(left)*/
+            padding: 20px 0px;
+        }
+
+
+        /*Main section*/
+
+        main{
+            position: relative;
+
+        }
+
+        /*sidebar*/
+        aside{
+            background: purple;
+            color: white;
+            width: 250px;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+
+
+        aside>nav>ul{
+            list-style: none;
+            margin: 0;/*go to inspect on webpage and find the issue through code and box model */
+
+        }
+
+        /*Content Section*/
+
+        /*paragraph section*/
+        main>section{
+            margin-left: 250px;
+
+            /*Applying google font to specific paragraph's element*/
+            font-family: "New Amsterdam", sans-serif , system-ui; /*system-ui ;is supports if defines font family not working then system ui bring os default fonts*/
+            font-weight: 400;
+            font-style: normal;
+
+        }
+
+        main>section>p:last-child{
+            margin-bottom: 0;
+        }
+
+        main>section>p:first-child{
+            margin-top: 0;
+        }
+
+
+        /*gif image section*/
+
+        main>section>section{
+            background: #33a3e8;
+            position: relative;
+            height: 300px;
+        }
+
+        main>section>section>div{
+            background:url("../assets/css-images/monkey.gif"); /*easy way to use resource through background*/
+            width: calc(100%/3); /*use calc feature to use same gif in same width size divides*/
+            height: 300px;
+            position: absolute;
+        }
+
+        main>section>section>div:nth-child(2){
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        main>section>section>div:last-child{
+            right: 0;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+<!--header section-->
+<header>
+    <img src="../assets/css-images/ijse-logo.jpg" title="logo" alt="logo" width="110" height="90">
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Service</li>
+            <li>Contact</li>
+            <li>About us</li>
+        </ul>
+    </nav>
+</header>
+
+<!--main section-->
+<main>
+    <!--Sidebar-->
+    <aside>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Service</li>
+                <li>Contact</li>
+                <li>About us</li>
+            </ul>
+        </nav>
+    </aside>
+    <!--Content section-->
+    <section>
+
+        <!--Image Gif -->
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <!--Paragraph Section-->
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto distinctio necessitatibus officiis placeat quia saepe sapiente tenetur vero. Aliquid beatae eos libero officiis perferendis placeat quos veritatis vero voluptatibus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores commodi est expedita iusto necessitatibus neque nobis! Cumque dignissimos eos molestiae natus possimus? Facere facilis fugit officia porro sequi voluptatem voluptatibus?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, dicta exercitationem id quibusdam sapiente sequi tempore? Aperiam aspernatur, corporis, delectus earum facilis inventore modi nobis nulla rerum veniam voluptas voluptatum?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur, dolor dolorem dolores, error exercitationem expedita facere id nostrum obcaecati perferendis quis recusandae repellat. Asperiores commodi hic nesciunt numquam velit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, aperiam cumque dolores, ex excepturi exercitationem facere fuga illum ipsam maiores molestiae nihil numquam optio, praesentium quod quos sapiente sunt suscipit?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto distinctio necessitatibus officiis placeat quia saepe sapiente tenetur vero. Aliquid beatae eos libero officiis perferendis placeat quos veritatis vero voluptatibus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores commodi est expedita iusto necessitatibus neque nobis! Cumque dignissimos eos molestiae natus possimus? Facere facilis fugit officia porro sequi voluptatem voluptatibus?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, dicta exercitationem id quibusdam sapiente sequi tempore? Aperiam aspernatur, corporis, delectus earum facilis inventore modi nobis nulla rerum veniam voluptas voluptatum?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur, dolor dolorem dolores, error exercitationem expedita facere id nostrum obcaecati perferendis quis recusandae repellat. Asperiores commodi hic nesciunt numquam velit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, aperiam cumque dolores, ex excepturi exercitationem facere fuga illum ipsam maiores molestiae nihil numquam optio, praesentium quod quos sapiente sunt suscipit?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto distinctio necessitatibus officiis placeat quia saepe sapiente tenetur vero. Aliquid beatae eos libero officiis perferendis placeat quos veritatis vero voluptatibus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores commodi est expedita iusto necessitatibus neque nobis! Cumque dignissimos eos molestiae natus possimus? Facere facilis fugit officia porro sequi voluptatem voluptatibus?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, dicta exercitationem id quibusdam sapiente sequi tempore? Aperiam aspernatur, corporis, delectus earum facilis inventore modi nobis nulla rerum veniam voluptas voluptatum?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur, dolor dolorem dolores, error exercitationem expedita facere id nostrum obcaecati perferendis quis recusandae repellat. Asperiores commodi hic nesciunt numquam velit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, aperiam cumque dolores, ex excepturi exercitationem facere fuga illum ipsam maiores molestiae nihil numquam optio, praesentium quod quos sapiente sunt suscipit?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto distinctio necessitatibus officiis placeat quia saepe sapiente tenetur vero. Aliquid beatae eos libero officiis perferendis placeat quos veritatis vero voluptatibus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores commodi est expedita iusto necessitatibus neque nobis! Cumque dignissimos eos molestiae natus possimus? Facere facilis fugit officia porro sequi voluptatem voluptatibus?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, dicta exercitationem id quibusdam sapiente sequi tempore? Aperiam aspernatur, corporis, delectus earum facilis inventore modi nobis nulla rerum veniam voluptas voluptatum?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur, dolor dolorem dolores, error exercitationem expedita facere id nostrum obcaecati perferendis quis recusandae repellat. Asperiores commodi hic nesciunt numquam velit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, aperiam cumque dolores, ex excepturi exercitationem facere fuga illum ipsam maiores molestiae nihil numquam optio, praesentium quod quos sapiente sunt suscipit?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto distinctio necessitatibus officiis placeat quia saepe sapiente tenetur vero. Aliquid beatae eos libero officiis perferendis placeat quos veritatis vero voluptatibus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores commodi est expedita iusto necessitatibus neque nobis! Cumque dignissimos eos molestiae natus possimus? Facere facilis fugit officia porro sequi voluptatem voluptatibus?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, dicta exercitationem id quibusdam sapiente sequi tempore? Aperiam aspernatur, corporis, delectus earum facilis inventore modi nobis nulla rerum veniam voluptas voluptatum?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur, dolor dolorem dolores, error exercitationem expedita facere id nostrum obcaecati perferendis quis recusandae repellat. Asperiores commodi hic nesciunt numquam velit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, aperiam cumque dolores, ex excepturi exercitationem facere fuga illum ipsam maiores molestiae nihil numquam optio, praesentium quod quos sapiente sunt suscipit?
+        </p>
+    </section>
+</main>
+
+<!--footer section-->
+<footer>
+    <div>Developed by IJSE</div>
+</footer>
+
+
+</body>
+</html>

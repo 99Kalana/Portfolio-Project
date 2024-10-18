@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="description about the html page">
+    <meta name="keywords" content="java, html, css, js, go, react, angular">
+    <meta name="authour" content="IJSE-Karl">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/Cern-Logo-1954.png">
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <title>Assignment 4 - case 5</title>
+
+
+    <style>
+
+        main{
+            overflow: hidden;
+            width: 50vw;
+            height: 50vh;
+            border: 10px solid red;
+
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            position: absolute;
+
+        }
+
+        div{
+            width: 50vw;
+            height: 50vh;
+        }
+
+        main>section{
+            display: flex;
+            width: fit-content;
+
+            animation: animation-slide 3s infinite alternate;
+        }
+
+        main>section>div:first-child{
+            background-image: url("../assets/assignment4_case5_animation_slide/slide1.jpeg");
+            background-size: cover;
+            background-position:center ;
+        }
+
+        main>section>div:nth-child(2){
+            background-image: url("../assets/assignment4_case5_animation_slide/slide2.jpeg");
+            background-size: cover;
+            background-position:center ;
+        }
+
+        main>section>div:nth-child(3){
+            background-image: url("../assets/assignment4_case5_animation_slide/slide3.jpeg");
+            background-size: cover;
+            background-position:center ;
+        }
+
+        main>section>div:nth-child(4){
+            background-image: url("../assets/assignment4_case5_animation_slide/slide4.jpeg");
+            background-size: cover;
+            background-position:center ;
+        }
+
+
+
+        @keyframes animation-slide {
+              0%,20%{
+                  transform: translateX(0%);
+              }
+              /*5% adding custom animation delay by adding keyframe % gaps */
+              25%,45%{
+                  transform: translateX(-25%);
+              }
+              /*5%*/
+              50%,70%{
+                  transform: translateX(-50%);
+              }
+              /*5%*/
+              75%,100%{
+                  transform: translateX(-75%);
+              }
+
+          }
+
+
+    </style>
+
+</head>
+<body>
+
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
+</body>
+</html>

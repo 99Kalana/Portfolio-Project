@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="description about the html page">
+    <meta name="keywords" content="java, html, css, js, go, react, angular">
+    <meta name="authour" content="IJSE-Karl">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/Cern-Logo-1954.png">
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <title>Internet-Technologies-CSS-assignment-3-case-6</title>
+
+    <style>
+
+        body>section{
+            width: 1000px;
+            height: 500px;
+            background:lightblue;
+
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        body>section>div{
+            border: 1px solid black;
+        }
+
+        body>section>div:first-child{
+            background: red;
+            grid-column: 1/3;
+        }
+
+        body>section>div:nth-child(2){
+            background: greenyellow;
+
+        }
+
+        body>section>div:nth-child(3){
+            background: orangered;
+            grid-column: 4/5;
+            grid-row: 1/4;
+
+        }
+
+        body>section>div:nth-child(4){
+            background: mediumpurple;
+
+
+        }
+
+        body>section>div:nth-child(5){
+            background: deeppink;
+
+        }
+
+        body>section>div:nth-child(6){
+            background: darkblue;
+
+        }
+
+        body>section>div:nth-child(7){
+            background: saddlebrown;
+        }
+
+        body>section>div:nth-child(8){
+            background: darkmagenta;
+            grid-column: 2/4;
+            grid-row: 3/4;
+
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+<section>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <!--<div></div>-->
+    <!--<div></div>-->
+    <!--<div></div>-->
+    <!--<div></div>-->
+
+</section>
+
+</body>
+</html>
