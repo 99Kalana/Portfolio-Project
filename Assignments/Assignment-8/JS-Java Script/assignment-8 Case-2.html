@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="description about the html page">
+    <meta name="keywords" content="java, html, css, js, go, react, angular">
+    <meta name="authour" content="IJSE-Karl">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/Cern-Logo-1954.png">
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <title>Assignment-8 ~ Case-02</title>
+
+    <style>
+
+        body{
+            background-color: darkgrey;
+            overflow: hidden;
+        }
+
+        main{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            /*border: 5px solid red;*/
+        }
+
+        main>h1{
+            position: absolute;
+            width: fit-content;
+            height: fit-content;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 30px;
+            color: white;
+            font-size: 36px;
+        }
+
+        main>hr{
+            position: absolute;
+            color: white;
+            width: 60%;
+            height: fit-content;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        main>#l1{
+            top: 400px;
+        }
+
+        main>#l2{
+            bottom: 400px;
+        }
+
+        main>section{
+            position: absolute;
+            display: flex;
+            width: 60%;
+            height: 300px;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            /*border: 5px solid hotpink;*/
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        main>section>div{
+            width: 160px;
+            height: 80px;
+            border: 2px solid white;
+            border-radius: 13px 13px 13px 13px;
+        }
+
+        main>section>div:nth-child(1){
+            align-self: start;
+            background-color: red;
+        }
+
+        main>section>div:nth-child(2){
+            align-self: center;
+            background-color: green;
+        }
+
+        main>section>div:nth-child(3){
+            align-self: center;
+            background-color: darkblue;
+        }
+
+        main>section>div:nth-child(4){
+            align-self: center;
+            background-color: yellow;
+        }
+
+        main>section>div:nth-child(5){
+            align-self: center;
+            background-color: plum;
+        }
+
+        main>section>div:nth-child(6){
+            align-self: end;
+            background-color: hotpink;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<main>
+
+    <h1>Java Script Queue</h1>
+
+    <hr id="l1">
+
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <hr id="l2">
+
+</main>
+
+<script>
+    let array_styles = ["plum","hotpink","red","green","darkblue","yellow"];
+
+
+    setInterval( () => {
+        let last_array_style = array_styles.pop();
+        array_styles.unshift(last_array_style);
+
+        document.getElementsByTagName("div")[0].style.backgroundColor = array_styles[0];
+        document.getElementsByTagName("div")[1].style.backgroundColor = array_styles[1];
+        document.getElementsByTagName("div")[2].style.backgroundColor = array_styles[2];
+        document.getElementsByTagName("div")[3].style.backgroundColor = array_styles[3];
+        document.getElementsByTagName("div")[4].style.backgroundColor = array_styles[4];
+        document.getElementsByTagName("div")[5].style.backgroundColor = array_styles[5];
+    },1000 )
+
+</script>
+
+</body>
+</html>

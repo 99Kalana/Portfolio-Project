@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="description about the html page">
+    <meta name="keywords" content="java, html, css, js, go, react, angular">
+    <meta name="authour" content="IJSE-Karl">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../Assets/Cern-Logo-1954.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>Calculator</title>
+
+    <style>
+        #number-buttons{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        #number-buttons>button{
+            width: 80px;
+            height: 80px;
+            margin: 10px;
+            font-size: 30px;
+            font-weight:600;
+            border-radius: 30px 30px 30px 30px;
+            box-shadow: 5px 5px 5px gray;
+        }
+
+        #operator-buttons{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        #operator-buttons>button{
+            width: 70px;
+            height: 70px;
+            margin: 10px;
+            font-size: 30px;
+            font-weight:500;
+            border-radius: 10px 10px 10px 10px;
+            box-shadow: 5px 5px 5px gray;
+        }
+
+        #process-buttons{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #process-buttons>button{
+            color: white;
+            font-size: 30px;
+            width: 130px;
+            height: fit-content;
+            border-radius: 10px 10px 10px 10px;
+            box-shadow: 5px 5px 5px gray;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<main id="main" class="position-relative" style="width: 100vw; height: 100vh; /*border: 3px solid blue*/">
+    <div class="card position-absolute" id="card" style="width: 30vw; height: 80vh; top: 0;bottom: 0;left: 0;right: 0;margin: auto; box-shadow: 10px 10px 10px gray">
+            <h3 class="position-absolute" style="width: fit-content; height: fit-content; top: 10px; left: 10px">Calculator</h3>
+
+        <div class="input-group mb-3 position-absolute" style="width: 18vw; height: 10vh; top: 80px;  left: 10px;">
+            <input type="text" id="cal" class="form-control" placeholder="Calculation" aria-label="Username" aria-describedby="basic-addon1">
+            <span class="input-group-text" id="basic-addon2">=</span>
+        </div>
+
+        <div class="input-group mb-3 position-absolute" style="width: 10vw; height: 10vh; top: 80px; right: 10px;">
+            <input type="text" id="ans" class="form-control" placeholder="Answer" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        </div>
+
+        <!--Number Buttons-->
+        <div class="text-center position-absolute" id="number-buttons" style=" width:max-content; height: max-content;  /*border: 3px solid blue;*/ left:30px; top: 220px;">
+            <button type="button" id="button-1" class="btn btn-primary">1</button>
+            <button type="button" id="button-2" class="btn btn-primary">2</button>
+            <button type="button" id="button-3" class="btn btn-primary">3</button>
+            <button type="button" id="button-4" class="btn btn-primary">4</button>
+            <button type="button" id="button-5" class="btn btn-primary">5</button>
+            <button type="button" id="button-6" class="btn btn-primary">6</button>
+            <button type="button" id="button-7" class="btn btn-primary">7</button>
+            <button type="button" id="button-8" class="btn btn-primary">8</button>
+            <button type="button" id="button-9" class="btn btn-primary">9</button>
+            <button type="button" id="button-0" class="btn btn-primary">0</button>
+            <button type="button" id="button-." class="btn btn-primary">.</button>
+            <button type="button" id="button-clear" class="btn btn-dark"><</button>
+        </div>
+
+        <!--Operator Buttons-->
+        <div class="text-center position-absolute" id="operator-buttons" style=" width:max-content; height: max-content;  /*border: 3px solid blue;*/ right:80px; top: 220px;">
+            <button type="button" id="button%" class="btn btn-primary">%</button>
+            <button type="button" id="button/" class="btn btn-primary">/</button>
+            <button type="button" id="button*" class="btn btn-primary">*</button>
+            <button type="button" id="button+" class="btn btn-primary">+</button>
+            <button type="button" id="button-" class="btn btn-primary">-</button>
+        </div>
+
+        <!--Process Buttons-->
+        <div class="text-center position-absolute" id="process-buttons" style=" width:16vw; height: max-content;  /*border: 3px solid blue;*/ left:60px; bottom: 30px;">
+            <button type="button" id="button-delete" class="btn btn-danger">Clear</button>
+            <button type="button" id="button-answer" class="btn btn-warning">=</button>
+        </div>
+
+
+    </div>
+</main>
+
+<script>
+
+    // Two input fields
+    const calField = document.getElementById('cal');
+    const ansField = document.getElementById('ans');
+
+
+    // Function to append the clicked button value to 'cal' field
+    const appendValue = (value) => {
+        calField.value += value;
+    };
+
+    // Function to evaluate the calculation when '=' is clicked ---------------------------------------------------------------
+    const calculateAnswer = () => {
+        const input = calField.value;
+
+        try {
+            const result = evaluateExpression(input);
+            ansField.value = result;
+        } catch (error) {
+            ansField.value = "Error";
+        }
+    };
+
+    // Function without using eval()
+    const evaluateExpression = (expression) => {
+
+        let tokens = expression.split(/([+\-*/%])/).filter(token => token.trim() !== "");
+
+
+        tokens = processOperators(tokens, ['*', '/', '%']);
+
+
+        tokens = processOperators(tokens, ['+', '-']);
+
+
+        if (tokens.length === 1) {
+            return tokens[0];
+        } else {
+            throw new Error("Invalid expression");
+        }
+    };
+
+    // Operator handling
+    const processOperators = (tokens, operators) => {
+        const newTokens = [];
+        let i = 0;
+
+        while (i < tokens.length) {
+            const token = tokens[i];
+
+            if (operators.includes(token)) {
+                const left = parseFloat(newTokens.pop()); // Previous number
+                const right = parseFloat(tokens[++i]);    // Next number
+                let result;
+
+                switch (token) {
+                    case '*':
+                        result = left * right;
+                        break;
+                    case '/':
+                        if (right === 0) throw new Error("Division by zero");
+                        result = left / right;
+                        break;
+                    case '%':
+                        result = left % right;
+                        break;
+                    case '+':
+                        result = left + right;
+                        break;
+                    case '-':
+                        result = left - right;
+                        break;
+                }
+
+                newTokens.push(result.toString());
+            } else {
+                newTokens.push(token);
+            }
+
+            i++;
+        }
+
+        return newTokens;
+    };
+
+
+    //---------------------------------------------------------------------------------------------------------------------------
+
+    // Function to clear all fields when 'Clear' is clicked
+    const clearAll = () => {
+        calField.value = '';
+        ansField.value = '';
+    };
+
+    // Function to clear the last character when '<' is clicked
+    const clearLastCharacter = () => {
+        calField.value = calField.value.slice(0, -1);
+    };
+
+    //Event listeners for number and operator buttons
+    document.querySelectorAll('#number-buttons button, #operator-buttons button').forEach(button => {
+        if (button.id !== 'button-clear') {
+            button.addEventListener('click', () => {
+                appendValue(button.textContent); // Append the value of clicked button to 'appendValue' method
+            });
+        }
+    });
+
+    // Add event listener for '=' button
+    document.getElementById('button-answer').addEventListener('click', calculateAnswer);
+
+    // Add event listener for 'Clear' button
+    document.getElementById('button-delete').addEventListener('click', clearAll);
+
+    // Add event listener for '<' button (Backspace)
+    document.getElementById('button-clear').addEventListener('click', clearLastCharacter);
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
