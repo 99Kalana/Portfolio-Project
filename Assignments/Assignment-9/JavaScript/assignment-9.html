@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment-9</title>
+
+    <style>
+
+        body{
+            overflow: hidden;
+            background-color: black;
+        }
+
+        #kiit{
+            width: 43%;
+            height: fit-content;
+            position: absolute;
+            /*border: 2px solid black;*/
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+        }
+
+        #kiit>.line{
+            width: 100%;
+            height: fit-content;
+            background-color: black;
+        }
+
+        #light-panel{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .light{
+            width: 100px;
+            height: 50px;
+            background: white;
+            border: 1px solid black;
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        #btn-panel{
+            position: absolute;
+            display: flex;
+            justify-content: space-around;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 18%;
+            height: fit-content;
+            bottom: 36%;
+        }
+
+        #btn-panel>button{
+            font-size: 30px;
+            color: red;
+            border-radius: 10px 10px 10px 10px;
+            border: 3px solid white;
+        }
+
+
+        h1{
+            position: absolute;
+            width: fit-content;
+            height: fit-content;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 40%;
+            color: red;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<h1>Javascript Knight Rider</h1>
+
+<section id="kiit">
+
+    <hr id="l1" class="line">
+
+    <section id="light-panel">
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+    </section>
+
+    <hr id="l2" class="line">
+
+</section>
+
+<section id="btn-panel">
+    <button id="start_btn">Start</button>
+    <button id="stop_btn">Stop</button>
+</section>
+
+<audio id="kiit-audio" loop>
+    <source src="../assets/assignment-9-audio/kitt_scanner.mp3" type="audio/mp3">
+</audio>
+
+<script src="../assets/lib/jquery-3.7.1.min.js"></script>
+
+<script>
+
+    const light_count = 7;
+    let current_light = -1;
+    let direction = "RIGHT"; // "RIGHT", "LEFT"
+    let intervalId = null;
+
+    const audioElement = document.getElementById("kiit-audio");
+
+    updateLight = () =>{
+
+        if (direction==="RIGHT"){
+            current_light++;
+            $(".light").css("background", "white")
+            $(".light").eq(current_light).css("background", "red");
+            $(".light").eq(current_light-1).css("background", "pink");
+
+            if (current_light==light_count-1){
+                direction = "LEFT";
+            }
+
+        }else{
+            current_light--;
+            $(".light").css("background", "white")
+            $(".light").eq(current_light).css("background", "red");
+            $(".light").eq(current_light+1).css("background", "pink");
+
+            if (current_light==0){
+                direction = "RIGHT";
+            }
+
+        }
+
+
+    }
+
+
+
+    $('#start_btn').on('click', function (){
+        intervalId = setInterval(updateLight,110);
+        audioElement.play();
+    });
+
+    $('#stop_btn').on('click', function (){
+        clearInterval(intervalId);
+        audioElement.pause();
+        audioElement.currentTime = 0; // Reset audio to the start
+    });
+
+
+</script>
+
+</body>
+</html>
